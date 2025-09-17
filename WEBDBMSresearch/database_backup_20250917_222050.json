@@ -1,0 +1,353 @@
+{
+  "users": {
+    "seed-admin-id": {
+      "username": "admin",
+      "password_hash": "scrypt:32768:8:1$qnDtFQtCPd9xGlAE$b3ec073dba5bb4ff4cd2dbfccc9bf71490b32e23b0568a38776805667d8cfdcf924620a1b92f407953662cc9a55605229d3c8220118ee957e9a74093552769e1",
+      "role": "admin",
+      "lab": null
+    }
+  },
+  "physics": {
+    "a1b2c3d4": {
+      "name": "Vernier Caliper",
+      "quantity": 12,
+      "manufacturer": "Mitutoyo",
+      "model_number": "530-101",
+      "serial_number": "VC-2024-001",
+      "location": "Cabinet A-3",
+      "calibration_due": "2025-12-01",
+      "last_calibration": "2024-12-01",
+      "condition": "Good",
+      "current_user": null,
+      "usage_log": "Weekly practicals",
+      "notes": "Wipe clean after use"
+    },
+    "p2": {
+      "name": "Digital Multimeter",
+      "quantity": 10,
+      "manufacturer": "Fluke",
+      "model_number": "115",
+      "serial_number": "DM-2025-002",
+      "location": "Cabinet B-1",
+      "calibration_due": "2025-11-01",
+      "last_calibration": "2024-11-01",
+      "condition": "Good",
+      "current_user": null,
+      "usage_log": "Lab tests",
+      "notes": "Check battery before use"
+    },
+    "p3": {
+      "name": "Oscilloscope",
+      "quantity": 8,
+      "manufacturer": "Tektronix",
+      "model_number": "TBS1052B",
+      "serial_number": "OSC-2025-003",
+      "location": "Cabinet C-2",
+      "calibration_due": "2025-10-01",
+      "last_calibration": "2024-10-01",
+      "condition": "Good",
+      "current_user": null,
+      "usage_log": "Signal analysis",
+      "notes": "Handle with care"
+    },
+    "p4": {
+      "name": "Function Generator",
+      "quantity": 7,
+      "manufacturer": "Keysight",
+      "model_number": "33500B",
+      "serial_number": "FG-2025-004",
+      "location": "Cabinet D-1",
+      "calibration_due": "2025-09-01",
+      "last_calibration": "2024-09-01",
+      "condition": "Good",
+      "current_user": null,
+      "usage_log": "Waveform generation",
+      "notes": "Check output before use"
+    },
+    "p5": {
+      "name": "Power Supply",
+      "quantity": 9,
+      "manufacturer": "Rigol",
+      "model_number": "DP832",
+      "serial_number": "PS-2025-005",
+      "location": "Cabinet E-1",
+      "calibration_due": "2025-08-01",
+      "last_calibration": "2024-08-01",
+      "condition": "Good",
+      "current_user": null,
+      "usage_log": "Voltage source",
+      "notes": "Turn off after use"
+    },
+    "p6": {
+      "name": "Clamp Meter",
+      "quantity": 6,
+      "manufacturer": "UNI-T",
+      "model_number": "UT210E",
+      "serial_number": "CM-2025-006",
+      "location": "Cabinet F-1",
+      "calibration_due": "2025-07-01",
+      "last_calibration": "2024-07-01",
+      "condition": "Good",
+      "current_user": null,
+      "usage_log": "Current measurement",
+      "notes": "Zero before use"
+    },
+    "p7": {
+      "name": "Laser Pointer",
+      "quantity": 15,
+      "manufacturer": "Bosch",
+      "model_number": "GPL 5",
+      "serial_number": "LP-2025-007",
+      "location": "Cabinet G-1",
+      "calibration_due": "2025-06-01",
+      "last_calibration": "2024-06-01",
+      "condition": "Good",
+      "current_user": null,
+      "usage_log": "Optics experiments",
+      "notes": "Avoid direct eye exposure"
+    },
+    "p8": {
+      "name": "Stopwatch",
+      "quantity": 20,
+      "manufacturer": "Casio",
+      "model_number": "HS-80TW",
+      "serial_number": "SW-2025-008",
+      "location": "Cabinet H-1",
+      "calibration_due": "2025-05-01",
+      "last_calibration": "2024-05-01",
+      "condition": "Good",
+      "current_user": null,
+      "usage_log": "Timing",
+      "notes": "Replace battery yearly"
+    },
+    "p9": {
+      "name": "Spring Balance",
+      "quantity": 18,
+      "manufacturer": "Ohaus",
+      "model_number": "SB-2025-009",
+      "serial_number": "SB-2025-009",
+      "location": "Cabinet I-1",
+      "calibration_due": "2025-04-01",
+      "last_calibration": "2024-04-01",
+      "condition": "Good",
+      "current_user": null,
+      "usage_log": "Force measurement",
+      "notes": "Check zero before use"
+    },
+    "p10": {
+      "name": "Micrometer Screw Gauge",
+      "quantity": 14,
+      "manufacturer": "Mitutoyo",
+      "model_number": "103-137",
+      "serial_number": "MSG-2025-010",
+      "location": "Cabinet J-1",
+      "calibration_due": "2025-03-01",
+      "last_calibration": "2024-03-01",
+      "condition": "Good",
+      "current_user": null,
+      "usage_log": "Precision measurement",
+      "notes": "Store dry"
+    }
+  },
+  "chemistry": {
+    "c1": {
+      "name": "Hydrochloric Acid 37 %",
+      "quantity": 6,
+      "supplier_name": "Fisher Scientific",
+      "supplier_address": "Pittsburgh, PA",
+      "supplier_phone": "+1-800-766-7000",
+      "cas_number": "7647-01-0",
+      "signal_word": "Danger",
+      "hazards": "Corrosive, irritant",
+      "pictogram": "GHS05",
+      "precautionary_statements": "Wear PPE",
+      "supplemental_info": "Store below 25 \u00c2\u00b0C",
+      "distributor_name": "ChemSupply",
+      "distributor_phone": "+63-2-555-1234",
+      "date_purchased": "2024-03-15",
+      "date_opened": "2024-04-01",
+      "expiration_date": "2026-03-15"
+    },
+    "c2": {
+      "name": "Sodium Hydroxide",
+      "quantity": 10,
+      "supplier_name": "Merck",
+      "cas_number": "1310-73-2",
+      "signal_word": "Danger",
+      "hazards": "Corrosive",
+      "pictogram": "GHS05",
+      "precautionary_statements": "Wear gloves",
+      "expiration_date": "2026-05-01"
+    },
+    "c3": {
+      "name": "Ethanol",
+      "quantity": 12,
+      "supplier_name": "Sigma-Aldrich",
+      "cas_number": "64-17-5",
+      "signal_word": "Warning",
+      "hazards": "Flammable",
+      "pictogram": "GHS02",
+      "precautionary_statements": "Keep away from heat",
+      "expiration_date": "2026-06-01"
+    },
+    "c4": {
+      "name": "Copper(II) Sulfate",
+      "quantity": 8,
+      "supplier_name": "Fisher Scientific",
+      "cas_number": "7758-98-7",
+      "signal_word": "Warning",
+      "hazards": "Harmful",
+      "pictogram": "GHS07",
+      "precautionary_statements": "Avoid contact",
+      "expiration_date": "2026-07-01"
+    },
+    "c5": {
+      "name": "Potassium Permanganate",
+      "quantity": 7,
+      "supplier_name": "Merck",
+      "cas_number": "7722-64-7",
+      "signal_word": "Warning",
+      "hazards": "Oxidizer",
+      "pictogram": "GHS03",
+      "precautionary_statements": "Store away from organics",
+      "expiration_date": "2026-08-01"
+    },
+    "c6": {
+      "name": "Sulfuric Acid",
+      "quantity": 9,
+      "supplier_name": "Sigma-Aldrich",
+      "cas_number": "7664-93-9",
+      "signal_word": "Danger",
+      "hazards": "Corrosive",
+      "pictogram": "GHS05",
+      "precautionary_statements": "Wear eye protection",
+      "expiration_date": "2026-09-01"
+    },
+    "c7": {
+      "name": "Ammonium Chloride",
+      "quantity": 6,
+      "supplier_name": "Fisher Scientific",
+      "cas_number": "12125-02-9",
+      "signal_word": "Warning",
+      "hazards": "Irritant",
+      "pictogram": "GHS07",
+      "precautionary_statements": "Avoid inhalation",
+      "expiration_date": "2026-10-01"
+    },
+    "c8": {
+      "name": "Silver Nitrate",
+      "quantity": 5,
+      "supplier_name": "Merck",
+      "cas_number": "7761-88-8",
+      "signal_word": "Warning",
+      "hazards": "Oxidizer",
+      "pictogram": "GHS03",
+      "precautionary_statements": "Protect from light",
+      "expiration_date": "2026-11-01"
+    },
+    "c9": {
+      "name": "Acetic Acid",
+      "quantity": 11,
+      "supplier_name": "Sigma-Aldrich",
+      "cas_number": "64-19-7",
+      "signal_word": "Warning",
+      "hazards": "Corrosive",
+      "pictogram": "GHS05",
+      "precautionary_statements": "Use fume hood",
+      "expiration_date": "2026-12-01"
+    },
+    "c10": {
+      "name": "Magnesium Ribbon",
+      "quantity": 13,
+      "supplier_name": "Fisher Scientific",
+      "cas_number": "7439-95-4",
+      "signal_word": "Warning",
+      "hazards": "Flammable",
+      "pictogram": "GHS02",
+      "precautionary_statements": "Keep dry",
+      "expiration_date": "2027-01-01"
+    }
+  },
+  "biology": {
+    "b1": {
+      "name": "Prepared Slides \u00e2\u20ac\u201c Onion Root Tip",
+      "quantity": 25,
+      "storage_conditions": "Room temperature, dry",
+      "biohazard_level": 0,
+      "supplier_name": "Carolina Biological",
+      "supplier_contact": "support@carolina.com",
+      "catalog_number": "B5A1050",
+      "expiration_date": "2026-12-31",
+      "date_received": "2024-01-10",
+      "date_opened": "2024-01-15",
+      "last_used": "2024-05-20",
+      "used_by": "Grade 11 STEM",
+      "disposal_method": "Glass waste",
+      "notes": "Handle with forceps only"
+    },
+    "b2": {
+      "name": "Microscope",
+      "quantity": 10,
+      "supplier_name": "Olympus",
+      "catalog_number": "BX53",
+      "expiration_date": "2027-02-01"
+    },
+    "b3": {
+      "name": "Petri Dish",
+      "quantity": 30,
+      "supplier_name": "Fisher Scientific",
+      "catalog_number": "PD-2025-003",
+      "expiration_date": "2027-03-01"
+    },
+    "b4": {
+      "name": "Test Tube",
+      "quantity": 50,
+      "supplier_name": "Sigma-Aldrich",
+      "catalog_number": "TT-2025-004",
+      "expiration_date": "2027-04-01"
+    },
+    "b5": {
+      "name": "Pipette",
+      "quantity": 40,
+      "supplier_name": "Eppendorf",
+      "catalog_number": "PIP-2025-005",
+      "expiration_date": "2027-05-01"
+    },
+    "b6": {
+      "name": "Centrifuge",
+      "quantity": 5,
+      "supplier_name": "Thermo Fisher",
+      "catalog_number": "CF-2025-006",
+      "expiration_date": "2027-06-01"
+    },
+    "b7": {
+      "name": "Incubator",
+      "quantity": 3,
+      "supplier_name": "Memmert",
+      "catalog_number": "INC-2025-007",
+      "expiration_date": "2027-07-01"
+    },
+    "b8": {
+      "name": "Glass Slide",
+      "quantity": 100,
+      "supplier_name": "Carolina Biological",
+      "catalog_number": "GS-2025-008",
+      "expiration_date": "2027-08-01"
+    },
+    "b9": {
+      "name": "Cover Slip",
+      "quantity": 100,
+      "supplier_name": "Sigma-Aldrich",
+      "catalog_number": "CS-2025-009",
+      "expiration_date": "2027-09-01"
+    },
+    "b10": {
+      "name": "Dissecting Kit",
+      "quantity": 20,
+      "supplier_name": "Fisher Scientific",
+      "catalog_number": "DK-2025-010",
+      "expiration_date": "2027-10-01"
+    }
+  },
+  "borrow_requests": {}
+}

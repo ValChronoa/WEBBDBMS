@@ -1,0 +1,922 @@
+{
+  "users": {
+    "953ba818-23a5-407e-85c0-5906d5937afb": {
+      "username": "admin",
+      "password_hash": "scrypt:32768:8:1$FIpTG2wNkktJmb6V$98885a1ba2586321aafc0f7767c55524e8411d19939bafa2b9a5ced6ffd478a2a4007c1ba7483ae49dd025e5f8d647db42e234ce7cf581fad00305cbd54014da",
+      "role": "admin",
+      "lab": null,
+      "preferences": {
+        "theme": {
+          "name": "chem",
+          "primary": "#4FD1C5",
+          "accent": "#60A5FA",
+          "bg": "#0B1020",
+          "glass": "rgba(255,255,255,0.08)"
+        },
+        "layout": [
+          "announcements",
+          "inventory",
+          "quick_actions",
+          "borrowed"
+        ],
+        "buttons": {
+          "add_item": "Log New Chemical",
+          "scan": "Scan QR",
+          "reports": "Reports"
+        }
+      }
+    },
+    "bf9e917b-c50f-41eb-a222-c632744228bd": {
+      "username": "stephen",
+      "password_hash": "scrypt:32768:8:1$dYbyk0WePdyYNaC7$eed315b06219149d777bc530fb4c4d11a9f9c0c6d82ca4cc88b1160f4e4ad28480ed681c4eead6bfa0317c38b99ccac72445668075b94a0072e44c1c5eb4a833",
+      "role": "user",
+      "lab": "",
+      "preferences": {
+        "theme": {
+          "name": "bio",
+          "primary": "#34D399",
+          "accent": "#A7F3D0",
+          "bg": "#0C1A14",
+          "glass": "rgba(255,255,255,0.08)"
+        },
+        "layout": [
+          "quick_actions",
+          "inventory",
+          "borrowed",
+          "announcements"
+        ],
+        "buttons": {
+          "add_item": "Log New Chemical",
+          "scan": "Scan QR",
+          "reports": "Reports"
+        }
+      }
+    },
+    "4c1b98c4-5081-40e8-b890-f9e74f08dcce": {
+      "id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "username": "physics",
+      "role": "technician",
+      "lab": "physics",
+      "password_hash": "scrypt:32768:8:1$irktWrjzHux973Qm$d56446c114702edb1b61fe189ceb19cf669bdae08a989b4a87c2c293f41dc16d11e0a5a07b4050addec48fc1805829565ed13f8687ae286b4af0cfc1d7bbf50d",
+      "preferences": {
+        "theme": {
+          "name": "bio"
+        }
+      }
+    },
+    "633e1d2f-89bd-48ef-ae2c-b0c312d0fdee": {
+      "username": "biology",
+      "password_hash": "scrypt:32768:8:1$3LqSqjj6gzEGVO12$78aeb4cfef69da3afe1f3d541a8d081715d5954e8d78082d2a1278fb53c59a37acfd30b53abd6a67722aeb3b400f60939d834f70ae625867c15d691eddb80ea5",
+      "role": "technician",
+      "lab": "biology"
+    },
+    "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3": {
+      "username": "kimon",
+      "password_hash": "scrypt:32768:8:1$AzDhwzTN97ObJh6i$6eb02194154c7d9df62550d46897a53165f8cb56e276457546d3cede14ca2cfe28c0b61c8ed8de49ab3b8d4919e1bae2fb25a58f37a58360802d4d52bd71a584",
+      "role": "user",
+      "lab": null,
+      "preferences": {
+        "theme": {
+          "name": "light"
+        }
+      }
+    },
+    "ae16584b-a3a3-4b73-a290-37abfbd03126": {
+      "username": "admin2",
+      "password_hash": "scrypt:32768:8:1$UWNkWNENeTkkTR7q$3f10417d7e323a8d82b46627efae8ee939b45df0b272d4761a79d151b0b941a09046976c93f7eb1c8c433cf3238906166d96f99c7b1b6ca9dbf9bd2c72907fbd",
+      "role": "admin",
+      "lab": null
+    }
+  },
+  "biology": {
+    "b1": {
+      "name": "Microscope",
+      "quantity": 8,
+      "manufacturer": "Olympus",
+      "model_number": "CX23",
+      "serial_number": "BIO-2025-001",
+      "location": "Table T-1",
+      "calibration_due": "2025-12-01",
+      "last_calibration": "2024-12-01",
+      "condition": "Good",
+      "usage_log": "Slide observation",
+      "notes": "Cover after use"
+    },
+    "b2": {
+      "name": "Centrifuge",
+      "quantity": 2,
+      "manufacturer": "Eppendorf",
+      "model_number": "5424",
+      "serial_number": "BIO-2025-002",
+      "location": "Bench B-1",
+      "calibration_due": "2025-11-01",
+      "last_calibration": "2024-11-01",
+      "condition": "Good",
+      "usage_log": "Sample separation",
+      "notes": "Balance tubes"
+    },
+    "b3": {
+      "name": "Incubator",
+      "quantity": 3,
+      "manufacturer": "Memmert",
+      "model_number": "IN30",
+      "serial_number": "BIO-2025-003",
+      "location": "Corner C-1",
+      "calibration_due": "2025-10-01",
+      "last_calibration": "2024-10-01",
+      "condition": "Good",
+      "usage_log": "Culture growth",
+      "notes": "Monitor temperature"
+    },
+    "b4": {
+      "name": "Petri Dish",
+      "quantity": 50,
+      "manufacturer": "Tarsons",
+      "model_number": "PD90",
+      "serial_number": "BIO-2025-004",
+      "location": "Rack R-1",
+      "calibration_due": "2025-09-01",
+      "last_calibration": "2024-09-01",
+      "condition": "Good",
+      "usage_log": "Culture holding",
+      "notes": "Sterilize before use"
+    },
+    "b5": {
+      "name": "Pipette 1ml",
+      "quantity": 30,
+      "manufacturer": "Gilson",
+      "model_number": "P1",
+      "serial_number": "BIO-2025-005",
+      "location": "Drawer D-1",
+      "calibration_due": "2025-08-01",
+      "last_calibration": "2024-08-01",
+      "condition": "Good",
+      "usage_log": "Liquid transfer",
+      "notes": "Sterilize regularly"
+    },
+    "b6": {
+      "name": "Water Bath",
+      "quantity": 2,
+      "manufacturer": "Julabo",
+      "model_number": "WB-2025",
+      "serial_number": "BIO-2025-006",
+      "location": "Bench B-2",
+      "calibration_due": "2025-07-01",
+      "last_calibration": "2024-07-01",
+      "condition": "Good",
+      "usage_log": "Temperature control",
+      "notes": "Check water level"
+    },
+    "b7": {
+      "name": "Autoclave",
+      "quantity": 1,
+      "manufacturer": "Prestige",
+      "model_number": "AC-2025",
+      "serial_number": "BIO-2025-007",
+      "location": "Corner C-2",
+      "calibration_due": "2025-06-01",
+      "last_calibration": "2024-06-01",
+      "condition": "Good",
+      "usage_log": "Sterilization",
+      "notes": "Check pressure gauge"
+    },
+    "b8": {
+      "name": "Test Tube",
+      "quantity": 80,
+      "manufacturer": "Tarsons",
+      "model_number": "TT12",
+      "serial_number": "BIO-2025-008",
+      "location": "Rack R-2",
+      "calibration_due": "2025-05-01",
+      "last_calibration": "2024-05-01",
+      "condition": "Good",
+      "usage_log": "Sample holding",
+      "notes": "Dispose if chipped"
+    },
+    "b9": {
+      "name": "Spectrophotometer",
+      "quantity": 2,
+      "manufacturer": "Shimadzu",
+      "model_number": "UV-1280",
+      "serial_number": "BIO-2025-009",
+      "location": "Bench B-3",
+      "calibration_due": "2025-04-01",
+      "last_calibration": "2024-04-01",
+      "condition": "Good",
+      "usage_log": "Absorbance measurement",
+      "notes": "Calibrate before use"
+    },
+    "b10": {
+      "name": "Microtome",
+      "quantity": 1,
+      "manufacturer": "Leica",
+      "model_number": "RM2235",
+      "serial_number": "BIO-2025-010",
+      "location": "Table T-2",
+      "calibration_due": "2025-03-01",
+      "last_calibration": "2024-03-01",
+      "condition": "Good",
+      "usage_log": "Sectioning",
+      "notes": "Sharpen blade"
+    }
+  },
+  "chemistry": {
+    "biology": {
+      "b1": {
+        "name": "Microscope",
+        "quantity": 8,
+        "manufacturer": "Olympus",
+        "model_number": "CX23",
+        "serial_number": "BIO-2025-001",
+        "location": "Table T-1",
+        "calibration_due": "2025-12-01",
+        "last_calibration": "2024-12-01",
+        "condition": "Good",
+        "usage_log": "Slide observation",
+        "notes": "Cover after use"
+      },
+      "b2": {
+        "name": "Centrifuge",
+        "quantity": 2,
+        "manufacturer": "Eppendorf",
+        "model_number": "5424",
+        "serial_number": "BIO-2025-002",
+        "location": "Bench B-1",
+        "calibration_due": "2025-11-01",
+        "last_calibration": "2024-11-01",
+        "condition": "Good",
+        "usage_log": "Sample separation",
+        "notes": "Balance tubes"
+      },
+      "b3": {
+        "name": "Incubator",
+        "quantity": 3,
+        "manufacturer": "Memmert",
+        "model_number": "IN30",
+        "serial_number": "BIO-2025-003",
+        "location": "Corner C-1",
+        "calibration_due": "2025-10-01",
+        "last_calibration": "2024-10-01",
+        "condition": "Good",
+        "usage_log": "Culture growth",
+        "notes": "Monitor temperature"
+      },
+      "b4": {
+        "name": "Petri Dish",
+        "quantity": 50,
+        "manufacturer": "Tarsons",
+        "model_number": "PD90",
+        "serial_number": "BIO-2025-004",
+        "location": "Rack R-1",
+        "calibration_due": "2025-09-01",
+        "last_calibration": "2024-09-01",
+        "condition": "Good",
+        "usage_log": "Culture holding",
+        "notes": "Sterilize before use"
+      },
+      "b5": {
+        "name": "Pipette 1ml",
+        "quantity": 30,
+        "manufacturer": "Gilson",
+        "model_number": "P1",
+        "serial_number": "BIO-2025-005",
+        "location": "Drawer D-1",
+        "calibration_due": "2025-08-01",
+        "last_calibration": "2024-08-01",
+        "condition": "Good",
+        "usage_log": "Liquid transfer",
+        "notes": "Sterilize regularly"
+      },
+      "b6": {
+        "name": "Water Bath",
+        "quantity": 2,
+        "manufacturer": "Julabo",
+        "model_number": "WB-2025",
+        "serial_number": "BIO-2025-006",
+        "location": "Bench B-2",
+        "calibration_due": "2025-07-01",
+        "last_calibration": "2024-07-01",
+        "condition": "Good",
+        "usage_log": "Temperature control",
+        "notes": "Check water level"
+      },
+      "b7": {
+        "name": "Autoclave",
+        "quantity": 1,
+        "manufacturer": "Prestige",
+        "model_number": "AC-2025",
+        "serial_number": "BIO-2025-007",
+        "location": "Corner C-2",
+        "calibration_due": "2025-06-01",
+        "last_calibration": "2024-06-01",
+        "condition": "Good",
+        "usage_log": "Sterilization",
+        "notes": "Check pressure gauge"
+      },
+      "b8": {
+        "name": "Test Tube",
+        "quantity": 80,
+        "manufacturer": "Tarsons",
+        "model_number": "TT12",
+        "serial_number": "BIO-2025-008",
+        "location": "Rack R-2",
+        "calibration_due": "2025-05-01",
+        "last_calibration": "2024-05-01",
+        "condition": "Good",
+        "usage_log": "Sample holding",
+        "notes": "Dispose if chipped"
+      },
+      "b9": {
+        "name": "Spectrophotometer",
+        "quantity": 2,
+        "manufacturer": "Shimadzu",
+        "model_number": "UV-1280",
+        "serial_number": "BIO-2025-009",
+        "location": "Bench B-3",
+        "calibration_due": "2025-04-01",
+        "last_calibration": "2024-04-01",
+        "condition": "Good",
+        "usage_log": "Absorbance measurement",
+        "notes": "Calibrate before use"
+      },
+      "b10": {
+        "name": "Microtome",
+        "quantity": 1,
+        "manufacturer": "Leica",
+        "model_number": "RM2235",
+        "serial_number": "BIO-2025-010",
+        "location": "Table T-2",
+        "calibration_due": "2025-03-01",
+        "last_calibration": "2024-03-01",
+        "condition": "Good",
+        "usage_log": "Sectioning",
+        "notes": "Sharpen blade"
+      }
+    },
+    "c1": {
+      "name": "Beaker 250ml",
+      "quantity": 20,
+      "manufacturer": "Pyrex",
+      "model_number": "B250",
+      "serial_number": "CH-2025-001",
+      "location": "Shelf C-1",
+      "calibration_due": "2025-12-01",
+      "last_calibration": "2024-12-01",
+      "condition": "Good",
+      "usage_log": "General mixing",
+      "notes": "Handle with care"
+    },
+    "c2": {
+      "name": "Erlenmeyer Flask 500ml",
+      "quantity": 15,
+      "manufacturer": "Corning",
+      "model_number": "EF500",
+      "serial_number": "CH-2025-002",
+      "location": "Shelf C-2",
+      "calibration_due": "2025-11-01",
+      "last_calibration": "2024-11-01",
+      "condition": "Good",
+      "usage_log": "Titration",
+      "notes": "Check for cracks"
+    },
+    "c3": {
+      "name": "Burette 50ml",
+      "quantity": 10,
+      "manufacturer": "Borosil",
+      "model_number": "BU50",
+      "serial_number": "CH-2025-003",
+      "location": "Shelf C-3",
+      "calibration_due": "2025-10-01",
+      "last_calibration": "2024-10-01",
+      "condition": "Good",
+      "usage_log": "Acid-base titration",
+      "notes": "Clean after use"
+    },
+    "c4": {
+      "name": "Pipette 10ml",
+      "quantity": 25,
+      "manufacturer": "Eppendorf",
+      "model_number": "P10",
+      "serial_number": "CH-2025-004",
+      "location": "Drawer D-1",
+      "calibration_due": "2025-09-01",
+      "last_calibration": "2024-09-01",
+      "condition": "Good",
+      "usage_log": "Liquid transfer",
+      "notes": "Sterilize regularly"
+    },
+    "c5": {
+      "name": "Test Tube",
+      "quantity": 100,
+      "manufacturer": "Tarsons",
+      "model_number": "TT15",
+      "serial_number": "CH-2025-005",
+      "location": "Rack R-1",
+      "calibration_due": "2025-08-01",
+      "last_calibration": "2024-08-01",
+      "condition": "Good",
+      "usage_log": "Sample holding",
+      "notes": "Dispose if chipped"
+    },
+    "c6": {
+      "name": "Graduated Cylinder 100ml",
+      "quantity": 18,
+      "manufacturer": "Borosil",
+      "model_number": "GC100",
+      "serial_number": "CH-2025-006",
+      "location": "Shelf C-4",
+      "calibration_due": "2025-07-01",
+      "last_calibration": "2024-07-01",
+      "condition": "Good",
+      "usage_log": "Volume measurement",
+      "notes": "Check calibration"
+    },
+    "c7": {
+      "name": "Hot Plate",
+      "quantity": 5,
+      "manufacturer": "Remi",
+      "model_number": "HP-2025",
+      "serial_number": "CH-2025-007",
+      "location": "Bench B-1",
+      "calibration_due": "2025-06-01",
+      "last_calibration": "2024-06-01",
+      "condition": "Good",
+      "usage_log": "Heating",
+      "notes": "Do not leave unattended"
+    },
+    "c8": {
+      "name": "pH Meter",
+      "quantity": 3,
+      "manufacturer": "Hanna",
+      "model_number": "PHM-2025",
+      "serial_number": "CH-2025-008",
+      "location": "Bench B-2",
+      "calibration_due": "2025-05-01",
+      "last_calibration": "2024-05-01",
+      "condition": "Good",
+      "usage_log": "pH measurement",
+      "notes": "Calibrate before use"
+    },
+    "c9": {
+      "name": "Fume Hood",
+      "quantity": 2,
+      "manufacturer": "Labconco",
+      "model_number": "FH-2025",
+      "serial_number": "CH-2025-009",
+      "location": "Wall W-1",
+      "calibration_due": "2025-04-01",
+      "last_calibration": "2024-04-01",
+      "condition": "Good",
+      "usage_log": "Ventilation",
+      "notes": "Check airflow"
+    },
+    "c10": {
+      "name": "Analytical Balance",
+      "quantity": 4,
+      "manufacturer": "Sartorius",
+      "model_number": "AB-2025",
+      "serial_number": "CH-2025-010",
+      "location": "Bench B-3",
+      "calibration_due": "2025-03-01",
+      "last_calibration": "2024-03-01",
+      "condition": "Good",
+      "usage_log": "Mass measurement",
+      "notes": "Keep level"
+    }
+  },
+  "physics": {
+    "e507e8a9-3732-433a-aaf0-72ed86dbe6c9": {
+      "name": "Vernier Caliper",
+      "quantity": 13,
+      "manufacturer": "Mitutoyo",
+      "model_number": "530-101",
+      "serial_number": "VC-2024-001",
+      "location": "Cabinet A-3",
+      "calibration_due": "2025-12-01",
+      "last_calibration": "2024-12-01",
+      "condition": "Good",
+      "usage_log": "Weekly practicals",
+      "notes": "Wipe clean after use"
+    },
+    "p2": {
+      "name": "Digital Multimeter",
+      "quantity": 9,
+      "manufacturer": "Fluke",
+      "model_number": "115",
+      "serial_number": "DM-2025-002",
+      "location": "Cabinet B-1",
+      "calibration_due": "2025-11-01",
+      "last_calibration": "2024-11-01",
+      "condition": "Good",
+      "usage_log": "Lab tests",
+      "notes": "Check battery before use"
+    },
+    "p3": {
+      "name": "Oscilloscope",
+      "quantity": 7,
+      "manufacturer": "Tektronix",
+      "model_number": "TBS1052B",
+      "serial_number": "OSC-2025-003",
+      "location": "Cabinet C-2",
+      "calibration_due": "2025-10-01",
+      "last_calibration": "2024-10-01",
+      "condition": "Good",
+      "usage_log": "Signal analysis",
+      "notes": "Handle with care"
+    },
+    "p4": {
+      "name": "Function Generator",
+      "quantity": 7,
+      "manufacturer": "Keysight",
+      "model_number": "33500B",
+      "serial_number": "FG-2025-004",
+      "location": "Cabinet D-1",
+      "calibration_due": "2025-09-01",
+      "last_calibration": "2024-09-01",
+      "condition": "Good",
+      "usage_log": "Waveform generation",
+      "notes": "Check output before use"
+    },
+    "p5": {
+      "name": "Power Supply",
+      "quantity": 8,
+      "manufacturer": "Rigol",
+      "model_number": "DP832",
+      "serial_number": "PS-2025-005",
+      "location": "Cabinet E-1",
+      "calibration_due": "2025-08-01",
+      "last_calibration": "2024-08-01",
+      "condition": "Good",
+      "usage_log": "Voltage source",
+      "notes": "Turn off after use"
+    },
+    "p6": {
+      "name": "Clamp Meter",
+      "quantity": 5,
+      "manufacturer": "UNI-T",
+      "model_number": "UT210E",
+      "serial_number": "CM-2025-006",
+      "location": "Cabinet F-1",
+      "calibration_due": "2025-07-01",
+      "last_calibration": "2024-07-01",
+      "condition": "Good",
+      "usage_log": "Current measurement",
+      "notes": "Zero before use"
+    },
+    "p7": {
+      "name": "Laser Pointer",
+      "quantity": 15,
+      "manufacturer": "Bosch",
+      "model_number": "GPL 5",
+      "serial_number": "LP-2025-007",
+      "location": "Cabinet G-1",
+      "calibration_due": "2025-06-01",
+      "last_calibration": "2024-06-01",
+      "condition": "Good",
+      "usage_log": "Optics experiments",
+      "notes": "Avoid direct eye exposure"
+    },
+    "p8": {
+      "name": "Stopwatch",
+      "quantity": 20,
+      "manufacturer": "Casio",
+      "model_number": "HS-80TW",
+      "serial_number": "SW-2025-008",
+      "location": "Cabinet H-1",
+      "calibration_due": "2025-05-01",
+      "last_calibration": "2024-05-01",
+      "condition": "Good",
+      "usage_log": "Timing",
+      "notes": "Replace battery yearly"
+    },
+    "p9": {
+      "name": "Spring Balance",
+      "quantity": 18,
+      "manufacturer": "Ohaus",
+      "model_number": "SB-2025-009",
+      "serial_number": "SB-2025-009",
+      "location": "Cabinet I-1",
+      "calibration_due": "2025-04-01",
+      "last_calibration": "2024-04-01",
+      "condition": "Good",
+      "usage_log": "Force measurement",
+      "notes": "Check zero before use"
+    },
+    "p10": {
+      "name": "Micrometer Screw Gauge",
+      "quantity": 14,
+      "manufacturer": "Mitutoyo",
+      "model_number": "103-137",
+      "serial_number": "MSG-2025-010",
+      "location": "Cabinet J-1",
+      "calibration_due": "2025-03-01",
+      "last_calibration": "2024-03-01",
+      "condition": "Good",
+      "usage_log": "Precision measurement",
+      "notes": "Store dry"
+    },
+    "4b0f75ec-f198-4715-af70-3719084a35a9": {
+      "name": "Lyka Hamid",
+      "quantity": 1,
+      "manufacturer": "Parents",
+      "model_number": "8943",
+      "serial_number": "34",
+      "location": "Cabinet-L1-3",
+      "calibration_due": "2025-09-23",
+      "last_calibration": "2025-09-11",
+      "condition": "Good",
+      "usage_log": "yess",
+      "notes": "yes"
+    }
+  },
+  "borrow_requests": {
+    "6f26c6a0-830b-4921-9541-1318bd08285f": {
+      "id": "6f26c6a0-830b-4921-9541-1318bd08285f",
+      "user_id": "bf9e917b-c50f-41eb-a222-c632744228bd",
+      "username": "stephen",
+      "item_id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+      "item_name": "Vernier Caliper",
+      "status": "returned",
+      "surrendered_id": true,
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAooAAAKKAQAAAACSD0chAAAIHElEQVR4nO2dS27rOgyGKcZAhw6QBWQpzs6Ks6TuIF5KFlDAHhZwoQu+JDk9szK4xxD/Qeo49gcbKEGJpKiUwVkzehMBAukndGSpAukndGSpAukndGSpAukndGSpAukndGSpAukndGSpAukndGSpOkcm1SAn0w2+U0rn7wSwDmBHKQGAnoPZ7uEfRLfXPqWr0BdHCmSnyCmTFpr0swmRfZDSbfxKMD3IXK45VwOTO+7jRscnvjsf8cU9ha40ViD/aeSgf9czwPQBkKblAnm+bkOG9S0n+iHP1wxpegxbBvgeANii7nQxmRUpAZy2Q704BtJN2Lv1NKKxGQxsEGI4NDaDDEA283HJ9EMGWC9kTNtw0BfHQLoJ/VBHR44byEDsTj7l/ZFSel94avSWYb7yr18J5jMN887/11P+Wvh7RCB7Rw76d2QXwwbxCQnGBWBazuSF+BwNy1b6uvKpU4aJpznrm8x28mufEgPpJvRDmXpHzhwzI08yPd4yhwnSjQdobCnke/jrtJSvFIxjpyQBusQRudc+pafQlcYKZG9IyHuRFyofFgeQqNpi4zqOtKkdsRfa6X6MF8dAugn7th4gd2JGcqIpjx2Rzajh0MV3Niu5TU3Ifj2F9UAgu0TOZxqlkU+ZOTMqgTeKFXCW58rZIB7IcaqHrksDGdNXSjeyqEnGcK99Sk+hK40VyE59j6r4Hg68sbnw8I2HapIe1WDc7jZySmCDwPA9jkJPmCiQjsp1tsM+pRzJKI1sRmc7HESoEyKzKLlt4jFcWI+z0BsIgfRUln/5EiEQEyIvJHOcEiEgw3maAdmsyC6ewnqchd5ACOQLogZZY2kSDRAXQ6reRS3KrhN7k+ssdDCF9TgLvYEQSE/lJtZsuR0Nt5FFaZzaHEt1NnzEsTkd0m0x74FAdloletkAxs9EZkB1oBvVuZFGKhC9U23oetm0GJSqREmJCg74A6YPrTo4yotjIN2EvSKhyfc0bsei0+pd6hxHLq7nihcaS1juGC+OgXQT9oocoLoY/eD5DHmX8XMQ7wIj+R52NuSF5qus+dn4Yvogz0TLGV71lBhIN6EfCnpHQlOkIz6Fz5ZogAbeNCzXFCFU31PuEIXvcRR6wkSBdFQmNekajhVI7rOYhgTeLFjdqiZ9lsj3YCB7jVhnm/SXsLUGq624QNyOxbOtuGCXKGWF9TgKPWGiQDoqy788HUrSx9Yl1FGaWpRFsaup7axsi6gBBLLjkduiBqGZn+KPOBinDqitTqhOCWLeA4Hsuc4t74dl4orU4+i8p9aQavVOcx2E74FA9oUE8yQaZNPgQEnw7FM91XBswLc3IVJYj6PQEyYKpKMyqSmqbqLTMtv5aUyli5sBylLTHNbjK3TmQSBfkC2d04mSndaaQLshnnKiHm8wfUgvEGoNMmyJWx+IKKGqR18pH+nFMZBuwl6RIL6n1IE2K3g0kmAhOJnZNAu166CthuBy+B5XoS+OFEh35LRYf2palG2J0m9adv1FX3XZdf5zPmU5ol81zkC3TXmLldkQyC6RM/enLkvkqMuhGUk1l2Jlu2Y7+nUdDvninkJXGiuQR8n3gMo6TTUhOPuhaXigRQjt8E0UIzdHoSdMFEhHZVFJ1zTVBLX7VFl7rRMiW8GtadSaac1hPa5CXxwpkI7K8i/fNHDb+Z7GFTWhbLtDskFNujWH9bgKfXGkQDoqyz+/NPpoW+doGY4VjVr1TilHaOxI3RNEvsdb6E6EQPpp4E/elycBUB5nXCDPt4EWYC+g59ZLrnkhmG+J+l3zJiW0Ncn4KWu5D/XiGEg3Ya9I0OHWz35uNWDQuJ2mJoHUtHJbYn0PBrLXbOlGX3Q5XI2l1UGbre+x5ojF6OoCOlFYj6PQEyYKpKPyvtFHk8KptdPaS7SdBrWpnpj3iALZGxL+5ntMtT5nF5Ert5nNRCdeViB7r3PLNa2jUvtoek5pUXVdjRq+hxXI3pCgDqNkQetGPHXQVnJAZkJtFPuH+aH/Q2Ig3YR+KFP3yHUA29KXN/GhrXvO6lPSTXI72kG0VsbxD7SXacr3NXZexED221Mn1ymPLESoYesSopZfn5pWlbwpK3yPo9ATJgqko7L8y/PxrgJnV+xWJjW1NAfa5T65hq3DehyFnjBRIB2VxRZk98Q2qlZbiz7vItc2qHqqMM1hPa5CXxwpkK+xHihb8tTObmWLebvOAgZNTEGc1ymiBhDIjrOlUMdhNWXadgpp9LRf1hT5Hghkb0hoZzHmU5q+oTWNqsM3vt5qDXRTucj3sALZ895xua7v2Q/G6m6l4qiKldV6UYiYGwSya+TInT2+E+d7uD8I/0k3q9nhHJC0qqJzcon0sX6kFF1B3IWB/JeRA39aovO05flMbdvsXJ7Pn7bx1QevAyKtly1TapVX/yTdtTG/8CkxkG5CPxT0jgQbjOnIrdkCq7QHrT3in7q97fbvgcj3QCB73rf01LYB0eBAVbvIp+0Uwhpj3oOBhN6RI3sXrmmz7eQ16cPNETeZ/GiJm6z52VX5wFFf/NfC3yMCeWzkxH1DrauofMzn75T/UNHonfuGPgbrn7gOkN4fVCC6RjdEDGS/e2YDrBQXWCmsNm5Dmu7UBX65bInCCWlazhZJuLLb4XCbtBYdYFouL3xKDKSb0A8FvSOhyZbWYlBZvFPXm5aCnFJ3rXOcZm/tLbohQiD7QqZ26YGL5mO8OAbSTeiHMgXST+jIUgXST+jIUgXST+jIUgXST+jIUgXST+jIUgXST+jIOhTyP61M8B81tUiBAAAAAElFTkSuQmCC",
+      "requested_at": "2025-09-15T12:31:39.142348",
+      "approved_at": "2025-09-15T12:40:36.397083",
+      "returned_at": "2025-09-15T12:47:28.789451",
+      "cancelled_at": null,
+      "technician_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "technician_name": "physics"
+    },
+    "ddb913b7-7938-4bc1-b6cf-2c1c341bb45d": {
+      "id": "ddb913b7-7938-4bc1-b6cf-2c1c341bb45d",
+      "user_id": "bf9e917b-c50f-41eb-a222-c632744228bd",
+      "username": "stephen",
+      "item_id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+      "item_name": "Vernier Caliper",
+      "status": "cancelled",
+      "surrendered_id": true,
+      "qr_code": "data:image/png;base64,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",
+      "requested_at": "2025-09-15T12:51:47.066412",
+      "approved_at": "2025-09-15T12:52:21.336327",
+      "returned_at": null,
+      "cancelled_at": "2025-09-15T13:09:32.046950",
+      "technician_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "technician_name": "physics"
+    },
+    "f3509df4-76f2-4cd2-88e4-6ae7adbeca34": {
+      "id": "f3509df4-76f2-4cd2-88e4-6ae7adbeca34",
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "item_id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+      "item_name": "Vernier Caliper",
+      "status": "cancelled",
+      "surrendered_id": true,
+      "qr_code": null,
+      "requested_at": "2025-09-15T13:10:19.265736",
+      "approved_at": null,
+      "returned_at": null,
+      "cancelled_at": "2025-09-15T13:17:18.091350",
+      "technician_id": null,
+      "technician_name": null
+    },
+    "3d348b52-00ef-4e5b-9017-aad4580fd291": {
+      "id": "3d348b52-00ef-4e5b-9017-aad4580fd291",
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "item_id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+      "item_name": "Vernier Caliper",
+      "status": "cancelled",
+      "surrendered_id": true,
+      "qr_code": null,
+      "requested_at": "2025-09-15T13:16:21.304949",
+      "approved_at": null,
+      "returned_at": null,
+      "cancelled_at": "2025-09-15T13:17:16.678317",
+      "technician_id": null,
+      "technician_name": null
+    },
+    "c15857b9-0359-4d2a-b092-5a0d09d71194": {
+      "id": "c15857b9-0359-4d2a-b092-5a0d09d71194",
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "item_id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+      "item_name": "Vernier Caliper",
+      "status": "returned",
+      "surrendered_id": true,
+      "qr_code": "data:image/png;base64,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",
+      "requested_at": "2025-09-15T13:18:08.657130",
+      "approved_at": "2025-09-15T13:18:39.066127",
+      "returned_at": "2025-09-15T13:55:09.935790",
+      "cancelled_at": null,
+      "technician_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "technician_name": "physics"
+    },
+    "515c494f-56f1-40e9-84f9-ec79f1b60644": {
+      "id": "515c494f-56f1-40e9-84f9-ec79f1b60644",
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "item_id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+      "item_name": "Vernier Caliper",
+      "status": "returned",
+      "surrendered_id": true,
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAooAAAKKAQAAAACSD0chAAAHd0lEQVR4nO2dQY4bOQxFKbaBLG0gB+ijVN8gRwpypLlB+yh9gAD2sgE3NKBEiipnme/BGPofgeN2VT3YC4IiRVKlClhnRRNFiMRJgSwXkTgpkOUiEicFslxE4qRAlotInBTIchGJkwJZLiJxUiDLtTiyuA4i55PFLqWUfuHtepBSTu2Wg33yZRe+SrulSeQab98e+y2hUizOROSiyK2aLvbWbOHnxQynXTl+Ftk+Sqm13syswsDaE+/Hm93z0p6uz/jDkVIorYnI/zXy4P9fTyLbPyJF5OUm59dqRvL70C5U+7Ns781mvvoT7b6yffjzpT32sG+pRMKkOJSsjjzcf2BGUuxf3S5Sux3JtUh1A/teS7/ww17ldnjSH65EwqSrIg/3H5xPzSpcZfsoItvl5M7m/PrZ4p5DlevhJucfv/+Tb6lEwqQ4VGh55NGiGHtjMU4LfuR8ahkCkfrrZJHNxf68WtxTvlXZLAyS67duabVFRQ//lkApEtZF5KLIc8uZWTbAcgDlzV5+fjTTsHc9ifBSZbu0l0jG+YWvyL49+FsipVBaE5GrIaXu5Z9d/KVZj2fV2p/Hm/RMm5mQG9Oe8P4cP1yJhEnXth5pttCM5L3nn2f7CDsSM5xhYP2WvPpC6xEi17SealZhwY9ZRfc9ZkfN2XSPU81SutuxW3qQ1Eyom9+LeyFaD1CKhHURCVTt67Xc9uzupFnKuNBtJrdHx2MT5eaLQFoPUIqEdREJVJ1CnpZ4M5vpCbWxhuvRTssaDFPr67rht7YWKdF6wFI0UIh80Mpta26nWcBu0daXZZnU7o9FyOPLvKNTaD1IKZTWRCRQ1TXCm2FH75Ntza6oLd8iBdeWb5E62Gg9YCkaKEQiVd3ZtPxacyKeF+jJgTSSbhp7t+OuyB1V5coNLYUThUig6uRshpF45YCv19yYhnfJhME+59ZF6wFKkbAuIoGqJnc7w1zGiizNasrDuY/y+CjinhtXbkLkWkhxhzGy0329tg+DRj47Mgmzs5mubrQesBQNFCKRqkP9754hyGxAZOQiV5DOJtxTL1E4BobWA5QiYV1EPmDl9mL/R+Q/FmPhhbKYxxRbprmNKox7hMil457aC9siipl8SkRFuaSLZyPaSdF6gFIkrItINLL+er1JKa9jMWZ9O9vlq/hUkNfIuTVNXihUWpsCp4KgpXCiEAlUNXk1Qe6HppHsykJjBzW2TP2zqERoou8BSpGwLiKBql1ZixOZaDeITK3tNkrD3jzPUFlrIESuXOdW07tkG89d3NMDovQzsjchE60HKEXCuogEqpqyrsCLb6LCIP68/VnHE75nKkzYaD1gKRooRMKtp6YT8T1S39u57x71+/bdP6aNvkeIXNl6tqinjoKcfdv1yGfPAw9Gk8+F/T1K5MIrt62nDqIze1JM0nEri/LqHG4gU/vpc/xwJRImXRtZPRsQ2zrnU9v0aUOmfB8nstg21C3L3rL27Xp4xh8OlWJxJiKfJ2vQdddW6p9GtDMCortwSVipo0Suivxyn7LVdmjCt30XtrunHH/YndLPy1fxVLaw1kCJXAwpEdnstkI9/zwn3jKfPbX2jMpqYc5NiFy5M7t68c3oS8i5H33nZ+7v8ZuHRVXOcxMil67UkZz7EbPb3IT8JceF3DUsVHdAtB6sFMwTIqGqw89M4wtGQ8+92/HdoP0eaRqYidYDlCJhXUQCVV3Z0BMNb2OPNPIC2Yo9Rho0c7Ent+DQepBSKK2JSKBqV/SWxhiQYUJjjvWoeMsnooObcU8TkashJdxJtIuOouquURE6BT93TacNsHHlJkQuaz01Rob+Oft9inZynpuPdxs92hf6HiVy1YlUt3mw+9yrMAbA708gyXTCeEJoPWgpnChEPuDE+UOzlEOcM9/O+v1+s7N+a9mq2EnAn2U6Dri/HO2I4HYo/Vt5rh+uRMKkqyJlWodNObexLMsEdupuovV9v6niv6QSCZPiULI6UjzuGSWg3vWWvaVRSp0jEcc43mz3qZm2pvUApUhYF5GPiXsk3Ul7P02q3g/hHeUIU8xU6XuUyIVXbtt+tuG9i4nM9u78nrnWQOh70FI4UYgEquZ2jZcUjKmi43iRURbaNUxtHtYr3O9RIhdDSsQ9eQrpLrLZHwecx2rHE2OTVeh7lMjFkDIWanFCT86mmqpy5pun2tAx903Y3yNErm09NQsOhuHsOn0yMb2b05uBU6X1QKVYnInIx6zcJEups2h0TM0ZDQvTMY3TKB5h3KNELoaU8DhRNn1/gulUIGq35xlzuzlUQt8jRK6dsb7MDabZDhcK79JdTA4UbTpyv0eJlNWRx5uUt2ubqZMn+TTH8llKOYn0F5uu0xTG9PQ//K+lf48g8rl9z5bHL07nxMVG0Ki23o21zpPlKn0PVIrFmYh8XNxTp4Plx87PPKc3ixB2sw4qu+OEyNVzbpIOaJo5FXukOU5nmkM1DRk10XqAUiSsi0icytx6ANH5OX64EgmT4lAhInFSIMtFJE4KZLmIxEmBLBeROCmQ5SISJwWyXETipEDWUyH/BWgCyc8KJxaoAAAAAElFTkSuQmCC",
+      "requested_at": "2025-09-15T13:18:17.976970",
+      "approved_at": "2025-09-15T13:18:46.689005",
+      "returned_at": "2025-09-15T13:55:12.650973",
+      "cancelled_at": null,
+      "technician_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "technician_name": "physics"
+    },
+    "49bdae78-b182-47c8-838d-015043e961a2": {
+      "id": "49bdae78-b182-47c8-838d-015043e961a2",
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "item_id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+      "item_name": "Vernier Caliper",
+      "status": "returned",
+      "surrendered_id": true,
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAooAAAKKAQAAAACSD0chAAAHfUlEQVR4nO2dXY5iOQyFHYPUjyDNAmopsINZUmuWNDsollILGAkeS6LkURz/5FLz1oceofg8VF+43E8g9ZETx3GaEFgXRhOJCokTA1mmQuLEQJapkDgxkGUqJE4MZJkKiRMDWaZC4sRAlqmQODGQZVoc2Ux7IrrZNV2O/dZtT60d/SNn+rIbF38mn2jn535LqBiL6yrkakiSLjrpP9edyPuhv7zqvV1/8076Uq/kvT+hf1TvhzuNx5Ly/ho/nAsJE6/unit1k+y6A+5EdFBr9FvdOMNR+sluIXVU95bZqj9G+rLcAxajgVTIZyIvx26X235EHLq8iejYTN77AO18+yGtHTVG9VB0uP8/3/LXxQBGIRdH7r+90/1xEqJ2+vuPezt9tO6jIzWi3b1d3j4bEX3thW77O13+/Oe3fEsuJEyMQ7mWRx76mKtf2JRH9dWdQiR/9WAj1/5Sg9LHDx/h3X6M1Vax0dyTvyVQjIQNFXJR5EVzZppkU3WT6FSm/2k/r0TtPCY6+l5/2ZNxduPLs29P/pZIMZSmKuSaIzfJNy7H3biQSx+u6cv+R+jWk9Vvn018+OZ2OcgL/vBC4sSrImnKuWmK+l3/RDbAsmr+Yc2+2WOaytYhnT+rqpwbUIyEDRUSKBn/5dUVh8hJ68qPjtzGjXgvPjImSWqhTHlLuQcrBvOokE9wj2T8iLVPM465x6wxxR67mild5R6gGAkbKiRQMpShY6yM2nqoasSebSjKYOOxZ2ekcg9QjIQNFRIoGf7Qq3BAeMadYsbJxLR92GdFYkO6cg9WDOZRIaGSdEqPOOOlJaazfs1DUVQY2FhvDOQ8dXAq94DFaCAVEikZAcNXS0c2QDW8oJdZ5+aFbRZxxic1Mt0d9Ro/nAsJE6+KpCnYxCxmMpOWgI7UWkSXrCuYc267GrlRIZdd75Gx1NPfVEOMu5mnnvYv+Hv6hM177jVyo0Kuu95zmoLIJmEQ857MJDxktkUzcuUetBhOpEICJZPGGmmUFHg4mRIGNuXxKGTVCV2HyrlxIRdD0pxki+VR20xqu0enaoKhsfyjV/nErtxDhVx83iPDR1nnFvEoNmrTfxW7hco9QDESNlRIoGT8lx8J522J27bWwCY6vi5kzQ0iMkllDbiQq1bq7CLdlputvdo67RKesXVTD0pU8x4q5LKxh8IBU+zxkZsGoOgAYo7yfXJWonCtWgMu5LpVovJt9UZDTNwdfXa8485kuq6TV/mUe5BiKE1VSKAkAsvU3CDL3qaXG1tl7JkbVEm5BysG86iQUMnIC0QQmTIEulC63T2a6YRcElKdMsf9Gj+cCwkTr4qkaQi2rXP7tu3aGyZuzBSbfK7lHi7kYkjKjLUvmc65tMxi+5KQx5lpZ3asEJ3KPWAxGkiFREpCuXCTldU+K5p3wm3We/wxVbkHLYYTqZDPiT2mnNl4qWjcyGI33/0T0yWqSh0u5GJImuNH7L22VvCx3zRawatsp0/k4XwGJOUetBhOpEI+IedG057RzD/nrgU/V8HXgKzvW4767uUeKuSyOTex4htPTGeBqDVwy/09Dz7KPahS7oGKsbiuQj6l1oAiMZ11BdO20lz+eewW7y0NqNyDFsOJVEigZJtu86qD+WoKO1a9M/c1mHbMqco9QDESNlRIoMSUvXYt4vjkZx7NqaZq0mEXynYhUu6BirG4rkICJUO54jntVZjL3qar2BM375O71ryHC7luN0SJlgbTouh8VELsPN18bgBONXKjQi7rHnlMqHkTnfBW1OLYMG/eSicVe6iQi9ca7GIMZybJ6k/v4pYde31ClPY7lXvAYjSQCvkE5K2fRyp3amf1kZ+PPU5ePI+hmp4Y57q0/fhwO/uJ2vT0bwkUI2FDhVz4zGy5tN2dLq0fxHg79sPm737eYtvd1Rtte8i2Hpwtl7dussP1tX44FxImptWRuz766tGlh5P2Zrm01o7b7Qd9BtSP0M4Df+n0sfdo9fRviRMDWaZC0upnKIgXfmYV9dzjLVLUeWBPtKUaqnkPUIyEDRUSKOnKxu4PaQKrp473Yr3Hz++Zi3mosgZoMZxIhXySe8i29owb2YR3zmK7ombnW58dJri4kDAxDkWrI8liSldmoiNZ7bvjvqey44nc5EMVe9BiOJEKCZRMChuMG9eHCuwsKZ0PoB93TrW/hwq5NPIg0n7KZ8tzS/XtdvatC60d9R1dA/pqlnPT4HXryz+/5VtixCDOpEKuPHKjLKWejsCa8wceiubzex6OCJaKPUAxEjZUSKDEBmORN4v8QSzwzF3c8lisTR8qqn5uVMilO/GepiAyn5Lgmjf5PM57qHJuVEic+EWRBy1d84KcadFHPtsobOuTH5vjTI0RXv6H/7L41xGFfPXYQ5F/jrR1NjzIiU6c9RtPDFXsAYqRsKFCAiXbeY85IE5ZzOzbti2VL6Nmy7dduYcKuXbOjbI0JyvZ7MqnQVOrqpgpvXtjnXIPUgylqQqJUwvnoHR5jR/OhYSJcShXIXFiIMtUSJwYyDIVEicGskyFxImBLFMhcWIgy1RInBjIeinkv8T77xFonJ+FAAAAAElFTkSuQmCC",
+      "requested_at": "2025-09-15T13:54:27.667624",
+      "approved_at": "2025-09-15T13:54:46.130623",
+      "returned_at": "2025-09-15T13:55:15.079007",
+      "cancelled_at": null,
+      "technician_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "technician_name": "physics"
+    },
+    "6683691a-ce28-42c9-b39b-2f3e3b918bec": {
+      "id": "6683691a-ce28-42c9-b39b-2f3e3b918bec",
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "item_id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+      "item_name": "Vernier Caliper",
+      "status": "approved",
+      "surrendered_id": true,
+      "qr_code": "data:image/png;base64,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",
+      "requested_at": "2025-09-15T14:01:59.478803",
+      "approved_at": "2025-09-15T14:09:02.248729",
+      "returned_at": null,
+      "cancelled_at": null,
+      "technician_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "technician_name": "physics"
+    },
+    "a22908f7-db2e-4e74-8df5-8472dff99f64": {
+      "id": "a22908f7-db2e-4e74-8df5-8472dff99f64",
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "item_id": "p2",
+      "item_name": "Digital Multimeter",
+      "status": "approved",
+      "surrendered_id": true,
+      "qr_code": "data:image/png;base64,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",
+      "requested_at": "2025-09-15T14:01:59.523538",
+      "approved_at": "2025-09-15T14:09:05.404471",
+      "returned_at": null,
+      "cancelled_at": null,
+      "technician_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "technician_name": "physics"
+    },
+    "fcf0c4cb-3d45-4900-b5f0-8845c0653c32": {
+      "id": "fcf0c4cb-3d45-4900-b5f0-8845c0653c32",
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "item_id": "p3",
+      "item_name": "Oscilloscope",
+      "status": "approved",
+      "surrendered_id": true,
+      "qr_code": "data:image/png;base64,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",
+      "requested_at": "2025-09-15T14:01:59.557803",
+      "approved_at": "2025-09-15T14:09:07.933202",
+      "returned_at": null,
+      "cancelled_at": null,
+      "technician_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "technician_name": "physics"
+    },
+    "7ec7c7c9-5cb5-419d-ae9a-d3324d08880b": {
+      "id": "7ec7c7c9-5cb5-419d-ae9a-d3324d08880b",
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "item_id": "p5",
+      "item_name": "Power Supply",
+      "status": "approved",
+      "surrendered_id": true,
+      "qr_code": "data:image/png;base64,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",
+      "requested_at": "2025-09-15T14:01:59.576923",
+      "approved_at": "2025-09-15T14:09:10.765971",
+      "returned_at": null,
+      "cancelled_at": null,
+      "technician_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "technician_name": "physics"
+    },
+    "543787e6-ee3d-47a0-b7a6-6abc558546fd": {
+      "id": "543787e6-ee3d-47a0-b7a6-6abc558546fd",
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "item_id": "p6",
+      "item_name": "Clamp Meter",
+      "status": "approved",
+      "surrendered_id": true,
+      "qr_code": "data:image/png;base64,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",
+      "requested_at": "2025-09-15T14:01:59.626993",
+      "approved_at": "2025-09-15T14:09:12.958833",
+      "returned_at": null,
+      "cancelled_at": null,
+      "technician_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "technician_name": "physics"
+    },
+    "c1e68a62-a7b7-4d0b-8ab5-186fea68f23f": {
+      "items": [
+        {
+          "id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+          "quantity": 1
+        },
+        {
+          "id": "p2",
+          "quantity": 1
+        }
+      ],
+      "user_id": "bf9e917b-c50f-41eb-a222-c632744228bd",
+      "username": "stephen",
+      "status": "cancelled",
+      "created_at": "2025-09-17T08:42:38.326484",
+      "id": "c1e68a62-a7b7-4d0b-8ab5-186fea68f23f"
+    },
+    "f5626216-36ce-4022-a0ad-aacb55c62067": {
+      "items": [
+        {
+          "id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+          "name": "Vernier Caliper",
+          "quantity": 2
+        },
+        {
+          "id": "p2",
+          "name": "Digital Multimeter",
+          "quantity": 2
+        },
+        {
+          "id": "p3",
+          "name": "Oscilloscope",
+          "quantity": 2
+        }
+      ],
+      "user_id": "bf9e917b-c50f-41eb-a222-c632744228bd",
+      "username": "stephen",
+      "status": "returned",
+      "created_at": "2025-09-17T09:05:15.896458",
+      "id": "f5626216-36ce-4022-a0ad-aacb55c62067"
+    },
+    "ee4e6ef9-ead3-432d-9547-c33fa0cb6ed4": {
+      "items": [
+        {
+          "id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+          "name": "Vernier Caliper",
+          "quantity": 1
+        },
+        {
+          "id": "p2",
+          "name": "Digital Multimeter",
+          "quantity": 2
+        },
+        {
+          "id": "p3",
+          "name": "Oscilloscope",
+          "quantity": 1
+        }
+      ],
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "status": "cancelled",
+      "created_at": "2025-09-17T13:59:06.924903",
+      "id": "ee4e6ef9-ead3-432d-9547-c33fa0cb6ed4",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEIUlEQVR4nO1cbWrkMAyVlEB/JjAH6FHSG+yRlh5pbzA+yh6gMPm5kKBF8le2EOwJTDtZ60GTmYwejeEh68M2MhyDo4NEAGOWQEWLPRizBCpa7MGYJVDRYg/GLIGKFnswZglUtNiDMf9HJgb0gDiuCA57ebwivsndyW9vc7R6O+04j4AOsVpi9v42XeU6X0BCbPlbUZ+xGz96gOEmv3aL2uL3vS0Z84mZM/7jc4YF+B1fRE0dwyQSEqireoK3vR90gONhzBL6T99RfA565YiCRD7qjPjc4yRjfh1z+h1l5Ua9rX7uClHQQ/5nNaje9BOM+XjmwMwaE8HwJwQ8IabuGGDWWQ2AmZdzj/N+0AFOW8ze35zXTaeBNeP0q19w+v3CCPNlwel22Xikb3xbMubTaoi3j1ZkN3bybAFwr8ktDXzicZIxH10fetPLjAgwLIA/eZFnK8J0k7lMZPautaExRUZnHOcR0CFWS8w+3OfLIo6nB4dRNDCPcrksIUYapFIEa8zQzjVOMubDmMAeUgFKPkedkT7jq3y65q/QBcL1XOMkYz5YQ6CiufrkTIQ0SPqVLpOYaKVIUjfTUCWoNT/UiUrCJagpSSoHRZr+i6RMQ2VQW35oUpUM8onDvBWfLX4u887IT3KmoSpQYxriGBRlIV2zpPwllCFNQ5WgtupDbhT9DByb8vMon/pFS46+8ep+fPQw3SRN+7a3JWM+rYYQhrVnp4WfWZQDss5jHpFhVoO1BylbSw8NLbevBDXChDhHpWzMQ/v2S0zONJz2QZHFQ9Wg9nJ7D03h/TPVlZqkSlGGaagIaoQJW734UqLk9pAug3iflPknhmmoDGqECTnfCl9FQ5qIqXxAC9NeV1anvg/U2lzGmwQ/ZPlePjkUSiamoSpQi70OSA2y6JHAI4bTmWEaKoMajYfAx9S3fx3ULQTbMWEzDdWAmmKyd0HzC/P7KPXEV+a4fmj1a4r81HY99ziPgA6xmuyXwebTp8iIQ4cjBEU2l1WCGmFC1ETKwWJlMcsHQvssLg8xDdWBGmFCrhrGBUNJUpu6YyxbZy9lGiqCmmKigFk6YrrjFfGFNTyCVKyOe/BTrnbGcR4BHWK1xIRN+yLHQwrvbkAQq0c5bjI/VAa1ltsr0nLFGPtAaLzmZWrWc60GtcWcciKWJaVbhSTfD4vTRE2zndlQDWqECduMPnqabefstm23Wkx9D6jRcz9Y/sLhH7KrbLr+QXavC+gKNXavaanjucZJxvw6pvOnfSg6XbiYZjA9vaEPNaPneNtqUL3pJxjzvjX5XdytGNc2ctgblHv5lpdVg9pius1meo199IyPNZyIpo7HjUFhtt++EtQIE+2M8wKoZLALY5ZARYs9GLMEKlrswZglUNFiD8YsgYoWezBmCVS0gMaZfwGRjyUxM2c50gAAAABJRU5ErkJggg=="
+    }
+  },
+  "reports": {
+    "f7f54ce3-6874-49a1-bc74-c5baf84765dd": {
+      "id": "f7f54ce3-6874-49a1-bc74-c5baf84765dd",
+      "user_id": "bf9e917b-c50f-41eb-a222-c632744228bd",
+      "username": "stephen",
+      "lab": null,
+      "title": "missing id",
+      "description": "where my id at",
+      "status": "closed",
+      "created_at": "2025-09-17T09:21:12.389459",
+      "responses": [
+        {
+          "id": "80ba83b7-1ca8-4ca3-a547-07944438c513",
+          "user_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+          "username": "physics",
+          "role": "technician",
+          "message": "tubol",
+          "created_at": "2025-09-17T11:37:31.651667"
+        },
+        {
+          "id": "9dc05e51-df23-477b-9ebe-4433968d3fa7",
+          "user_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+          "username": "physics",
+          "role": "technician",
+          "message": "Changed status to: closed",
+          "created_at": "2025-09-17T11:41:03.013824"
+        }
+      ]
+    }
+  }
+}

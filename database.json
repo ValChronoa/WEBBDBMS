@@ -1,0 +1,679 @@
+{
+  "users": {
+    "953ba818-23a5-407e-85c0-5906d5937afb": {
+      "username": "admin",
+      "password_hash": "scrypt:32768:8:1$FIpTG2wNkktJmb6V$98885a1ba2586321aafc0f7767c55524e8411d19939bafa2b9a5ced6ffd478a2a4007c1ba7483ae49dd025e5f8d647db42e234ce7cf581fad00305cbd54014da",
+      "role": "admin",
+      "lab": null,
+      "preferences": {
+        "theme": {
+          "name": "chem",
+          "primary": "#4FD1C5",
+          "accent": "#60A5FA",
+          "bg": "#0B1020",
+          "glass": "rgba(255,255,255,0.08)"
+        },
+        "layout": [
+          "announcements",
+          "inventory",
+          "quick_actions",
+          "borrowed"
+        ],
+        "buttons": {
+          "add_item": "Log New Chemical",
+          "scan": "Scan QR",
+          "reports": "Reports"
+        }
+      }
+    },
+    "bf9e917b-c50f-41eb-a222-c632744228bd": {
+      "username": "stephen",
+      "password_hash": "scrypt:32768:8:1$dYbyk0WePdyYNaC7$eed315b06219149d777bc530fb4c4d11a9f9c0c6d82ca4cc88b1160f4e4ad28480ed681c4eead6bfa0317c38b99ccac72445668075b94a0072e44c1c5eb4a833",
+      "role": "user",
+      "lab": "",
+      "preferences": {
+        "theme": {
+          "name": "bio",
+          "primary": "#34D399",
+          "accent": "#A7F3D0",
+          "bg": "#0C1A14",
+          "glass": "rgba(255,255,255,0.08)"
+        },
+        "layout": [
+          "quick_actions",
+          "inventory",
+          "borrowed",
+          "announcements"
+        ],
+        "buttons": {
+          "add_item": "Log New Chemical",
+          "scan": "Scan QR",
+          "reports": "Reports"
+        }
+      }
+    },
+    "4c1b98c4-5081-40e8-b890-f9e74f08dcce": {
+      "id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+      "username": "physics",
+      "role": "technician",
+      "lab": "physics",
+      "password_hash": "scrypt:32768:8:1$irktWrjzHux973Qm$d56446c114702edb1b61fe189ceb19cf669bdae08a989b4a87c2c293f41dc16d11e0a5a07b4050addec48fc1805829565ed13f8687ae286b4af0cfc1d7bbf50d",
+      "preferences": {
+        "theme": {
+          "name": "bio"
+        }
+      }
+    },
+    "633e1d2f-89bd-48ef-ae2c-b0c312d0fdee": {
+      "username": "biology",
+      "password_hash": "scrypt:32768:8:1$3LqSqjj6gzEGVO12$78aeb4cfef69da3afe1f3d541a8d081715d5954e8d78082d2a1278fb53c59a37acfd30b53abd6a67722aeb3b400f60939d834f70ae625867c15d691eddb80ea5",
+      "role": "technician",
+      "lab": "biology"
+    },
+    "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3": {
+      "username": "kimon",
+      "password_hash": "scrypt:32768:8:1$AzDhwzTN97ObJh6i$6eb02194154c7d9df62550d46897a53165f8cb56e276457546d3cede14ca2cfe28c0b61c8ed8de49ab3b8d4919e1bae2fb25a58f37a58360802d4d52bd71a584",
+      "role": "user",
+      "lab": null,
+      "preferences": {
+        "theme": {
+          "name": "light"
+        }
+      }
+    },
+    "ae16584b-a3a3-4b73-a290-37abfbd03126": {
+      "username": "admin2",
+      "password_hash": "scrypt:32768:8:1$UWNkWNENeTkkTR7q$3f10417d7e323a8d82b46627efae8ee939b45df0b272d4761a79d151b0b941a09046976c93f7eb1c8c433cf3238906166d96f99c7b1b6ca9dbf9bd2c72907fbd",
+      "role": "admin",
+      "lab": null
+    }
+  },
+  "biology": {
+    "b1": {
+      "name": "Microscope",
+      "quantity": 8,
+      "manufacturer": "Olympus",
+      "model_number": "CX23",
+      "serial_number": "BIO-2025-001",
+      "location": "Table T-1",
+      "calibration_due": "2025-12-01",
+      "last_calibration": "2024-12-01",
+      "condition": "Good",
+      "usage_log": "Slide observation",
+      "notes": "Cover after use"
+    },
+    "b2": {
+      "name": "Centrifuge",
+      "quantity": 2,
+      "manufacturer": "Eppendorf",
+      "model_number": "5424",
+      "serial_number": "BIO-2025-002",
+      "location": "Bench B-1",
+      "calibration_due": "2025-11-01",
+      "last_calibration": "2024-11-01",
+      "condition": "Good",
+      "usage_log": "Sample separation",
+      "notes": "Balance tubes"
+    },
+    "b3": {
+      "name": "Incubator",
+      "quantity": 3,
+      "manufacturer": "Memmert",
+      "model_number": "IN30",
+      "serial_number": "BIO-2025-003",
+      "location": "Corner C-1",
+      "calibration_due": "2025-10-01",
+      "last_calibration": "2024-10-01",
+      "condition": "Good",
+      "usage_log": "Culture growth",
+      "notes": "Monitor temperature"
+    },
+    "b4": {
+      "name": "Petri Dish",
+      "quantity": 50,
+      "manufacturer": "Tarsons",
+      "model_number": "PD90",
+      "serial_number": "BIO-2025-004",
+      "location": "Rack R-1",
+      "calibration_due": "2025-09-01",
+      "last_calibration": "2024-09-01",
+      "condition": "Good",
+      "usage_log": "Culture holding",
+      "notes": "Sterilize before use"
+    },
+    "b5": {
+      "name": "Pipette 1ml",
+      "quantity": 30,
+      "manufacturer": "Gilson",
+      "model_number": "P1",
+      "serial_number": "BIO-2025-005",
+      "location": "Drawer D-1",
+      "calibration_due": "2025-08-01",
+      "last_calibration": "2024-08-01",
+      "condition": "Good",
+      "usage_log": "Liquid transfer",
+      "notes": "Sterilize regularly"
+    },
+    "b6": {
+      "name": "Water Bath",
+      "quantity": 2,
+      "manufacturer": "Julabo",
+      "model_number": "WB-2025",
+      "serial_number": "BIO-2025-006",
+      "location": "Bench B-2",
+      "calibration_due": "2025-07-01",
+      "last_calibration": "2024-07-01",
+      "condition": "Good",
+      "usage_log": "Temperature control",
+      "notes": "Check water level"
+    },
+    "b7": {
+      "name": "Autoclave",
+      "quantity": 1,
+      "manufacturer": "Prestige",
+      "model_number": "AC-2025",
+      "serial_number": "BIO-2025-007",
+      "location": "Corner C-2",
+      "calibration_due": "2025-06-01",
+      "last_calibration": "2024-06-01",
+      "condition": "Good",
+      "usage_log": "Sterilization",
+      "notes": "Check pressure gauge"
+    },
+    "b8": {
+      "name": "Test Tube",
+      "quantity": 80,
+      "manufacturer": "Tarsons",
+      "model_number": "TT12",
+      "serial_number": "BIO-2025-008",
+      "location": "Rack R-2",
+      "calibration_due": "2025-05-01",
+      "last_calibration": "2024-05-01",
+      "condition": "Good",
+      "usage_log": "Sample holding",
+      "notes": "Dispose if chipped"
+    },
+    "b9": {
+      "name": "Spectrophotometer",
+      "quantity": 2,
+      "manufacturer": "Shimadzu",
+      "model_number": "UV-1280",
+      "serial_number": "BIO-2025-009",
+      "location": "Bench B-3",
+      "calibration_due": "2025-04-01",
+      "last_calibration": "2024-04-01",
+      "condition": "Good",
+      "usage_log": "Absorbance measurement",
+      "notes": "Calibrate before use"
+    },
+    "b10": {
+      "name": "Microtome",
+      "quantity": 1,
+      "manufacturer": "Leica",
+      "model_number": "RM2235",
+      "serial_number": "BIO-2025-010",
+      "location": "Table T-2",
+      "calibration_due": "2025-03-01",
+      "last_calibration": "2024-03-01",
+      "condition": "Good",
+      "usage_log": "Sectioning",
+      "notes": "Sharpen blade"
+    }
+  },
+  "chemistry": {
+    "biology": {
+      "b1": {
+        "name": "Microscope",
+        "quantity": 8,
+        "manufacturer": "Olympus",
+        "model_number": "CX23",
+        "serial_number": "BIO-2025-001",
+        "location": "Table T-1",
+        "calibration_due": "2025-12-01",
+        "last_calibration": "2024-12-01",
+        "condition": "Good",
+        "usage_log": "Slide observation",
+        "notes": "Cover after use"
+      },
+      "b2": {
+        "name": "Centrifuge",
+        "quantity": 2,
+        "manufacturer": "Eppendorf",
+        "model_number": "5424",
+        "serial_number": "BIO-2025-002",
+        "location": "Bench B-1",
+        "calibration_due": "2025-11-01",
+        "last_calibration": "2024-11-01",
+        "condition": "Good",
+        "usage_log": "Sample separation",
+        "notes": "Balance tubes"
+      },
+      "b3": {
+        "name": "Incubator",
+        "quantity": 3,
+        "manufacturer": "Memmert",
+        "model_number": "IN30",
+        "serial_number": "BIO-2025-003",
+        "location": "Corner C-1",
+        "calibration_due": "2025-10-01",
+        "last_calibration": "2024-10-01",
+        "condition": "Good",
+        "usage_log": "Culture growth",
+        "notes": "Monitor temperature"
+      },
+      "b4": {
+        "name": "Petri Dish",
+        "quantity": 50,
+        "manufacturer": "Tarsons",
+        "model_number": "PD90",
+        "serial_number": "BIO-2025-004",
+        "location": "Rack R-1",
+        "calibration_due": "2025-09-01",
+        "last_calibration": "2024-09-01",
+        "condition": "Good",
+        "usage_log": "Culture holding",
+        "notes": "Sterilize before use"
+      },
+      "b5": {
+        "name": "Pipette 1ml",
+        "quantity": 30,
+        "manufacturer": "Gilson",
+        "model_number": "P1",
+        "serial_number": "BIO-2025-005",
+        "location": "Drawer D-1",
+        "calibration_due": "2025-08-01",
+        "last_calibration": "2024-08-01",
+        "condition": "Good",
+        "usage_log": "Liquid transfer",
+        "notes": "Sterilize regularly"
+      },
+      "b6": {
+        "name": "Water Bath",
+        "quantity": 2,
+        "manufacturer": "Julabo",
+        "model_number": "WB-2025",
+        "serial_number": "BIO-2025-006",
+        "location": "Bench B-2",
+        "calibration_due": "2025-07-01",
+        "last_calibration": "2024-07-01",
+        "condition": "Good",
+        "usage_log": "Temperature control",
+        "notes": "Check water level"
+      },
+      "b7": {
+        "name": "Autoclave",
+        "quantity": 1,
+        "manufacturer": "Prestige",
+        "model_number": "AC-2025",
+        "serial_number": "BIO-2025-007",
+        "location": "Corner C-2",
+        "calibration_due": "2025-06-01",
+        "last_calibration": "2024-06-01",
+        "condition": "Good",
+        "usage_log": "Sterilization",
+        "notes": "Check pressure gauge"
+      },
+      "b8": {
+        "name": "Test Tube",
+        "quantity": 80,
+        "manufacturer": "Tarsons",
+        "model_number": "TT12",
+        "serial_number": "BIO-2025-008",
+        "location": "Rack R-2",
+        "calibration_due": "2025-05-01",
+        "last_calibration": "2024-05-01",
+        "condition": "Good",
+        "usage_log": "Sample holding",
+        "notes": "Dispose if chipped"
+      },
+      "b9": {
+        "name": "Spectrophotometer",
+        "quantity": 2,
+        "manufacturer": "Shimadzu",
+        "model_number": "UV-1280",
+        "serial_number": "BIO-2025-009",
+        "location": "Bench B-3",
+        "calibration_due": "2025-04-01",
+        "last_calibration": "2024-04-01",
+        "condition": "Good",
+        "usage_log": "Absorbance measurement",
+        "notes": "Calibrate before use"
+      },
+      "b10": {
+        "name": "Microtome",
+        "quantity": 1,
+        "manufacturer": "Leica",
+        "model_number": "RM2235",
+        "serial_number": "BIO-2025-010",
+        "location": "Table T-2",
+        "calibration_due": "2025-03-01",
+        "last_calibration": "2024-03-01",
+        "condition": "Good",
+        "usage_log": "Sectioning",
+        "notes": "Sharpen blade"
+      }
+    },
+    "c1": {
+      "name": "Beaker 250ml",
+      "quantity": 20,
+      "manufacturer": "Pyrex",
+      "model_number": "B250",
+      "serial_number": "CH-2025-001",
+      "location": "Shelf C-1",
+      "calibration_due": "2025-12-01",
+      "last_calibration": "2024-12-01",
+      "condition": "Good",
+      "usage_log": "General mixing",
+      "notes": "Handle with care"
+    },
+    "c2": {
+      "name": "Erlenmeyer Flask 500ml",
+      "quantity": 15,
+      "manufacturer": "Corning",
+      "model_number": "EF500",
+      "serial_number": "CH-2025-002",
+      "location": "Shelf C-2",
+      "calibration_due": "2025-11-01",
+      "last_calibration": "2024-11-01",
+      "condition": "Good",
+      "usage_log": "Titration",
+      "notes": "Check for cracks"
+    },
+    "c3": {
+      "name": "Burette 50ml",
+      "quantity": 10,
+      "manufacturer": "Borosil",
+      "model_number": "BU50",
+      "serial_number": "CH-2025-003",
+      "location": "Shelf C-3",
+      "calibration_due": "2025-10-01",
+      "last_calibration": "2024-10-01",
+      "condition": "Good",
+      "usage_log": "Acid-base titration",
+      "notes": "Clean after use"
+    },
+    "c4": {
+      "name": "Pipette 10ml",
+      "quantity": 25,
+      "manufacturer": "Eppendorf",
+      "model_number": "P10",
+      "serial_number": "CH-2025-004",
+      "location": "Drawer D-1",
+      "calibration_due": "2025-09-01",
+      "last_calibration": "2024-09-01",
+      "condition": "Good",
+      "usage_log": "Liquid transfer",
+      "notes": "Sterilize regularly"
+    },
+    "c5": {
+      "name": "Test Tube",
+      "quantity": 100,
+      "manufacturer": "Tarsons",
+      "model_number": "TT15",
+      "serial_number": "CH-2025-005",
+      "location": "Rack R-1",
+      "calibration_due": "2025-08-01",
+      "last_calibration": "2024-08-01",
+      "condition": "Good",
+      "usage_log": "Sample holding",
+      "notes": "Dispose if chipped"
+    },
+    "c6": {
+      "name": "Graduated Cylinder 100ml",
+      "quantity": 18,
+      "manufacturer": "Borosil",
+      "model_number": "GC100",
+      "serial_number": "CH-2025-006",
+      "location": "Shelf C-4",
+      "calibration_due": "2025-07-01",
+      "last_calibration": "2024-07-01",
+      "condition": "Good",
+      "usage_log": "Volume measurement",
+      "notes": "Check calibration"
+    },
+    "c7": {
+      "name": "Hot Plate",
+      "quantity": 5,
+      "manufacturer": "Remi",
+      "model_number": "HP-2025",
+      "serial_number": "CH-2025-007",
+      "location": "Bench B-1",
+      "calibration_due": "2025-06-01",
+      "last_calibration": "2024-06-01",
+      "condition": "Good",
+      "usage_log": "Heating",
+      "notes": "Do not leave unattended"
+    },
+    "c8": {
+      "name": "pH Meter",
+      "quantity": 3,
+      "manufacturer": "Hanna",
+      "model_number": "PHM-2025",
+      "serial_number": "CH-2025-008",
+      "location": "Bench B-2",
+      "calibration_due": "2025-05-01",
+      "last_calibration": "2024-05-01",
+      "condition": "Good",
+      "usage_log": "pH measurement",
+      "notes": "Calibrate before use"
+    },
+    "c9": {
+      "name": "Fume Hood",
+      "quantity": 2,
+      "manufacturer": "Labconco",
+      "model_number": "FH-2025",
+      "serial_number": "CH-2025-009",
+      "location": "Wall W-1",
+      "calibration_due": "2025-04-01",
+      "last_calibration": "2024-04-01",
+      "condition": "Good",
+      "usage_log": "Ventilation",
+      "notes": "Check airflow"
+    },
+    "c10": {
+      "name": "Analytical Balance",
+      "quantity": 4,
+      "manufacturer": "Sartorius",
+      "model_number": "AB-2025",
+      "serial_number": "CH-2025-010",
+      "location": "Bench B-3",
+      "calibration_due": "2025-03-01",
+      "last_calibration": "2024-03-01",
+      "condition": "Good",
+      "usage_log": "Mass measurement",
+      "notes": "Keep level"
+    }
+  },
+  "physics": {
+    "e507e8a9-3732-433a-aaf0-72ed86dbe6c9": {
+      "name": "Vernier Caliper",
+      "quantity": 12,
+      "manufacturer": "Mitutoyo",
+      "model_number": "530-101",
+      "serial_number": "VC-2024-001",
+      "location": "Cabinet A-3",
+      "calibration_due": "2025-12-01",
+      "last_calibration": "2024-12-01",
+      "condition": "Good",
+      "usage_log": "Weekly practicals",
+      "notes": "Wipe clean after use"
+    },
+    "p2": {
+      "name": "Digital Multimeter",
+      "quantity": 9,
+      "manufacturer": "Fluke",
+      "model_number": "115",
+      "serial_number": "DM-2025-002",
+      "location": "Cabinet B-1",
+      "calibration_due": "2025-11-01",
+      "last_calibration": "2024-11-01",
+      "condition": "Good",
+      "usage_log": "Lab tests",
+      "notes": "Check battery before use"
+    },
+    "p3": {
+      "name": "Oscilloscope",
+      "quantity": 7,
+      "manufacturer": "Tektronix",
+      "model_number": "TBS1052B",
+      "serial_number": "OSC-2025-003",
+      "location": "Cabinet C-2",
+      "calibration_due": "2025-10-01",
+      "last_calibration": "2024-10-01",
+      "condition": "Good",
+      "usage_log": "Signal analysis",
+      "notes": "Handle with care"
+    },
+    "p4": {
+      "name": "Function Generator",
+      "quantity": 7,
+      "manufacturer": "Keysight",
+      "model_number": "33500B",
+      "serial_number": "FG-2025-004",
+      "location": "Cabinet D-1",
+      "calibration_due": "2025-09-01",
+      "last_calibration": "2024-09-01",
+      "condition": "Good",
+      "usage_log": "Waveform generation",
+      "notes": "Check output before use"
+    },
+    "p5": {
+      "name": "Power Supply",
+      "quantity": 8,
+      "manufacturer": "Rigol",
+      "model_number": "DP832",
+      "serial_number": "PS-2025-005",
+      "location": "Cabinet E-1",
+      "calibration_due": "2025-08-01",
+      "last_calibration": "2024-08-01",
+      "condition": "Good",
+      "usage_log": "Voltage source",
+      "notes": "Turn off after use"
+    },
+    "p6": {
+      "name": "Clamp Meter",
+      "quantity": 5,
+      "manufacturer": "UNI-T",
+      "model_number": "UT210E",
+      "serial_number": "CM-2025-006",
+      "location": "Cabinet F-1",
+      "calibration_due": "2025-07-01",
+      "last_calibration": "2024-07-01",
+      "condition": "Good",
+      "usage_log": "Current measurement",
+      "notes": "Zero before use"
+    },
+    "p7": {
+      "name": "Laser Pointer",
+      "quantity": 15,
+      "manufacturer": "Bosch",
+      "model_number": "GPL 5",
+      "serial_number": "LP-2025-007",
+      "location": "Cabinet G-1",
+      "calibration_due": "2025-06-01",
+      "last_calibration": "2024-06-01",
+      "condition": "Good",
+      "usage_log": "Optics experiments",
+      "notes": "Avoid direct eye exposure"
+    },
+    "p8": {
+      "name": "Stopwatch",
+      "quantity": 20,
+      "manufacturer": "Casio",
+      "model_number": "HS-80TW",
+      "serial_number": "SW-2025-008",
+      "location": "Cabinet H-1",
+      "calibration_due": "2025-05-01",
+      "last_calibration": "2024-05-01",
+      "condition": "Good",
+      "usage_log": "Timing",
+      "notes": "Replace battery yearly"
+    },
+    "p9": {
+      "name": "Spring Balance",
+      "quantity": 18,
+      "manufacturer": "Ohaus",
+      "model_number": "SB-2025-009",
+      "serial_number": "SB-2025-009",
+      "location": "Cabinet I-1",
+      "calibration_due": "2025-04-01",
+      "last_calibration": "2024-04-01",
+      "condition": "Good",
+      "usage_log": "Force measurement",
+      "notes": "Check zero before use"
+    },
+    "p10": {
+      "name": "Micrometer Screw Gauge",
+      "quantity": 14,
+      "manufacturer": "Mitutoyo",
+      "model_number": "103-137",
+      "serial_number": "MSG-2025-010",
+      "location": "Cabinet J-1",
+      "calibration_due": "2025-03-01",
+      "last_calibration": "2024-03-01",
+      "condition": "Good",
+      "usage_log": "Precision measurement",
+      "notes": "Store dry"
+    },
+    "4b0f75ec-f198-4715-af70-3719084a35a9": {
+      "name": "Lyka Hamid",
+      "quantity": 1,
+      "manufacturer": "Parents",
+      "model_number": "8943",
+      "serial_number": "34",
+      "location": "Cabinet-L1-3",
+      "calibration_due": "2025-09-23",
+      "last_calibration": "2025-09-11",
+      "condition": "Good",
+      "usage_log": "yess",
+      "notes": "yes"
+    }
+  },
+  "borrow_requests": {
+    "284f49dc-81a8-49ec-91b3-e81123d69f6e": {
+      "items": [
+        {
+          "id": "e507e8a9-3732-433a-aaf0-72ed86dbe6c9",
+          "name": "Vernier Caliper",
+          "quantity": 1
+        }
+      ],
+      "user_id": "1e452c68-7b3d-4fcf-b5a3-339e6e3b87b3",
+      "username": "kimon",
+      "status": "approved",
+      "created_at": "2025-09-17T14:22:32.867302",
+      "id": "284f49dc-81a8-49ec-91b3-e81123d69f6e",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAD+ElEQVR4nO1cbWrjQAyVZMP+TGAP0KPYNyt7pL1BfJQeoBD/LDjMImk+nIKZ8RBvm47eD3fc6OEYhEZ60gQd1GGiSiKAMXOgrMUWjJkDZS22YMwcKGuxBWPmQFmLLRgzB8pabMGYP5GJHj3gOPfgV3BDHPnj6XxDgDlYjU/7njWgKlZLTHAMGOTPteMLgLucFgA4LXHFJvJpNL4813uSMQ9nzjG+QOfw9epXIJfhynFI41X/uGfuB1VwFMY8jtl/usfh7w0dzGfQon/gsDSd38HB/KhnkjF/NnM6+wWirkIIGo97ZjGo3PQTjHk888QpTljhqLc33t94L3v7pVHJObc87pn7QRUchTEPZ05ScHHgGd54e+Pi7FU8h1c+BN20LHvUMytANSSBMY/Oh1z6x/Sy8O0HSl0G00tYwck98XuSMY/Wh0a5zIgSh3CcZfO6oVT0EoxSqDJ9qBDUlj4EUQaKK1WKHPvQ4JaVnapEpg9lQY0wQT0iyos+uxZ5kT9NaqOKj+CFRvOhPKgxnfrq/WVdeQX3kTikOrX4lflQGagRJniPWG1e8m/xl04vPimSsMRX63WUgdqLQ6C+IYEn3EJqmqVbi0NloEaY4HNlyXMkDinEc1xchVvby3aAGmHCymmSv/ikqIvJtk+FUvPefCgPaoQJ3iPSbSzOovuA5dRVoEaYEHSflOxIHc9JdBoiilW+1G/mQ2Wg1nLqbjV+tvYrSLHJO5f5UCGoKab78yK9MRearHMP7iIXaeOzDTfvZT72y79tDaiKxTDmjhk0HN76BYbr7wV1auj0ztNo/SLjZ246A992y1O+JxnzeI1xCX0NmYDVLKhbCdiqD+ncte1lRaDWZvIXvomZNCMWYiCSY/zAfKgQ1BTTXeZfKhLpnId3mg9c9fJ1OO07fNsaUBWLYcwyJiKfIOMJIe9IIebg6/WGkl2nHtodswZkzJ96vgxWHbFY6rtU1qtzWT5UDGpwfuii/wlydLq41AQxfagc1F6/DKKo6BHLNK9Orxv65kN5UFNMxDNHnyAq+l0tRCQ9++qPuFo+VAxqLQ55+HmzsG+BIvqV9ct2gFqbH4I7eTEMDEESjlbOZT5UBGqLOYhfiCYtx4KkmOejQpCEI0mP9NDQF3/bClANSWDMLJzfwbww7bOgVYHfreapdWU5dRmoUaZzjtVpTqLH0wfKRbr666NC3+bbloN22N7DmHt/OwYmHvTQXgc7Ev9sDAL07Dq+Ze+e8T3JmP9Dp3ZeQAxytD8bBHB3aMjqsmJQq3XZcH+WDD4dcTWNsRzUCBPtN84zoJzBJoyZA2UttmDMHChrsQVj5kBZiy0YMwfKWmzBmDlQ1gIaZ/4DFQ5qOerVXSsAAAAASUVORK5CYII="
+    }
+  },
+  "reports": {
+    "f7f54ce3-6874-49a1-bc74-c5baf84765dd": {
+      "id": "f7f54ce3-6874-49a1-bc74-c5baf84765dd",
+      "user_id": "bf9e917b-c50f-41eb-a222-c632744228bd",
+      "username": "stephen",
+      "lab": null,
+      "title": "missing id",
+      "description": "where my id at",
+      "status": "closed",
+      "created_at": "2025-09-17T09:21:12.389459",
+      "responses": [
+        {
+          "id": "80ba83b7-1ca8-4ca3-a547-07944438c513",
+          "user_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+          "username": "physics",
+          "role": "technician",
+          "message": "tubol",
+          "created_at": "2025-09-17T11:37:31.651667"
+        },
+        {
+          "id": "9dc05e51-df23-477b-9ebe-4433968d3fa7",
+          "user_id": "4c1b98c4-5081-40e8-b890-f9e74f08dcce",
+          "username": "physics",
+          "role": "technician",
+          "message": "Changed status to: closed",
+          "created_at": "2025-09-17T11:41:03.013824"
+        }
+      ]
+    }
+  }
+}

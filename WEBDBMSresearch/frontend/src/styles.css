@@ -1,0 +1,19 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #22d3ee;
+}
+a { @apply underline decoration-dotted underline-offset-4; }
+.card { @apply bg-slate-900/60 border border-slate-800 rounded-2xl p-6 shadow-glow; }
+.button-primary { @apply px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 active:scale-95 transition; }
+.button-ghost { @apply px-4 py-2 rounded-xl bg-slate-800/60 hover:bg-slate-700/60 transition; }
+.input { @apply px-3 py-2 rounded-xl bg-slate-800 border border-slate-700 outline-none focus:ring-2 focus:ring-cyan-400; }
+.table { @apply w-full text-sm; }
+.table th { @apply text-left font-semibold text-slate-300 border-b border-slate-700 pb-2; }
+.table td { @apply py-2 border-b border-slate-800; }
+\n
+:root { --primary: #4FD1C5; --accent:#60A5FA; }
+body { color: white; }
