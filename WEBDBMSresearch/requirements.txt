@@ -3,3 +3,6 @@ uvicorn
 PyJWT
 pymongo
 werkzeug
+qrcode
+pydantic
+python-multipart
