@@ -11,6 +11,9 @@ from .core.dependencies import storage, get_current_user, require_role, create_t
 
 # --- App and security ---
 app = FastAPI(title="WEBDBMS API")
+from fastapi.staticfiles import StaticFiles
+
+app.mount("/", StaticFiles(directory="WEBDBMSresearch/frontend/dist", html=True), name="frontend")
 
 # Include routers
 app.include_router(reports.router)
