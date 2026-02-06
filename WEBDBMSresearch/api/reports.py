@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 from uuid import uuid4
 from datetime import datetime
-from ..core.dependencies import storage, get_current_user, require_role
+from core.dependencies import storage, get_current_user, require_role
 
 router = APIRouter(prefix="/api/reports", tags=["reports"])
 

@@ -6,8 +6,8 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from uuid import uuid4
 from datetime import datetime, timedelta
 import jwt
-from .api import reports, borrow
-from .core.dependencies import storage, get_current_user, require_role, create_token_for_user, JWT_SECRET
+from api import reports, borrow
+from core.dependencies import storage, get_current_user, require_role, create_token_for_user, JWT_SECRET
 
 # --- App and security ---
 app = FastAPI(title="WEBDBMS API")

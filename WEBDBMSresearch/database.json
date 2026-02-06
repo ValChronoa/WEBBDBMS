@@ -5,12 +5,72 @@
       "password_hash": "scrypt:32768:8:1$qnDtFQtCPd9xGlAE$b3ec073dba5bb4ff4cd2dbfccc9bf71490b32e23b0568a38776805667d8cfdcf924620a1b92f407953662cc9a55605229d3c8220118ee957e9a74093552769e1",
       "role": "admin",
       "lab": null
+    },
+    "ada9a76e-df90-4eb2-ac9e-61d388a9cd98": {
+      "username": "stephen",
+      "password_hash": "scrypt:32768:8:1$7MOFHkMz24jtRRJP$dabf313bee494d86a78d57e8c3a540246ec1a002efd8d471d37686b31595c8f5d2b654b360517664567adecfe8c5b4dba4987938f17ebac3b5f1c02e01485262",
+      "role": "user",
+      "lab": null
+    },
+    "52c54499-ad65-4660-b018-467182301e97": {
+      "username": "physics",
+      "password_hash": "scrypt:32768:8:1$bogUqnMgjjkh7vJ7$66c8656779228a2c327de0737e1e5d916cbe6668ebbb0bb6174ece0574b1a5205506f5f2f2facaa6ffc18b461496248aa6886bae9c4f9944ef50abce6e1c4b8a",
+      "role": "technician",
+      "lab": "physics"
+    },
+    "83185d12-99ba-444b-a9ca-8bd4507a16d8": {
+      "username": "biology",
+      "password_hash": "scrypt:32768:8:1$tlBZZftuI7rO9rqW$e3fc04c83faddf56b243b55741e2b346894fb4e1711ddc37ba3d2db0f0df70d9cc2eff7544c163c5866f09afb689163ca386ee5778f51cfe0e4a5f6d2f6dd972",
+      "role": "technician",
+      "lab": "biology"
+    },
+    "ccbbd57c-2d1f-4b4c-9feb-b16c970cc324": {
+      "username": "chemistry",
+      "password_hash": "scrypt:32768:8:1$WixbETNDTeeoe4Z8$5db01ac8ca14aae8eadce2d60f2ba35c07eb0dc7d451f75465c155078bec82395a6e9404d05104f13579007dbd8d29ad6e408fcde2069ebd37cea5744b849b47",
+      "role": "technician",
+      "lab": "chemistry"
+    },
+    "44d3a4c5-b82d-44fa-aa7a-b7cf4b19574d": {
+      "username": "chemistry",
+      "password_hash": "scrypt:32768:8:1$08o916eLmy0dP8tS$dd1f259c317955911b9e2b1ef4e12b4b08c32d33f71f95682e9daae4941d17cf62f29419c2aedcb0bd40efbe5b3e468d2d3b9cfd65de53fa1f5a9842dcbac173",
+      "role": "technician",
+      "lab": "chemistry"
+    },
+    "6dfcdb47-fefa-46c4-9ed8-5956c0a72ee0": {
+      "username": "chemistry1",
+      "password_hash": "scrypt:32768:8:1$FHpcdSLllTSSxdYm$cda5a6a9554b0d4117b0cf16e6009e31c7a8d2e8c6ae81ec2ac485cd3ce7711ce306a2f85f33e9868a0a1d3528b6cc45d2d5383245f7b3d303ac388f3c3ca868",
+      "role": "technician",
+      "lab": "chemistry"
+    },
+    "a8334ad9-4cad-4fb4-b53b-1851be8c45be": {
+      "username": "biology2",
+      "password_hash": "scrypt:32768:8:1$0cO9nkzQwXlaTCSh$1c3afda68eff749592cffd9029798bcfd51ac1061d6d6da62860c64f7f21743af1e65162b5f93f75a99b3b43b0bb39629fc7d26f45c64a0d796168affa4a9a5d",
+      "role": "technician",
+      "lab": "biology"
+    },
+    "b2a01502-fb4f-4391-9b0d-89ad485111d6": {
+      "username": "stephen1",
+      "password_hash": "scrypt:32768:8:1$BLXGGHnz7HLWLz11$16416e4731e4e4c7539365d6558157ced0e68c7af22164d8cf44a99dcc6c4255a0c1d5af6c487daf3367a345e90dfbff7d963349d6afc6e33f75ed2310d7e720",
+      "role": "user",
+      "lab": null
+    },
+    "1d37a072-885f-499d-b771-4657263ea99a": {
+      "username": "kimon",
+      "password_hash": "scrypt:32768:8:1$rjxX2g8SuxTmm0ya$7570029714ca18cbfaea806e6006c44a19470eef1c3469945e7a5d0e1efe9906bf0c4757642cbba7e3dd74c82982e0181062b2e30ad649e944bf835ed51f93ef",
+      "role": "user",
+      "lab": null
+    },
+    "b3504f5c-8966-4f4d-9b17-ec31002e48fd": {
+      "username": "chem",
+      "password_hash": "scrypt:32768:8:1$aI8uCkVP35YdA3Yp$6aa53faaa4fa61ba86de8ad6362dde86089f60890413852b5adebe7b10d41fa12ab6b418dfdd6fa30b770ad74b6805f61cb433f1f0c2113d33b88f40bb190e35",
+      "role": "technician",
+      "lab": "chemistry"
     }
   },
   "physics": {
     "a1b2c3d4": {
       "name": "Vernier Caliper",
-      "quantity": 12,
+      "quantity": 7,
       "manufacturer": "Mitutoyo",
       "model_number": "530-101",
       "serial_number": "VC-2024-001",
@@ -24,7 +84,7 @@
     },
     "p2": {
       "name": "Digital Multimeter",
-      "quantity": 10,
+      "quantity": 6,
       "manufacturer": "Fluke",
       "model_number": "115",
       "serial_number": "DM-2025-002",
@@ -38,7 +98,7 @@
     },
     "p3": {
       "name": "Oscilloscope",
-      "quantity": 8,
+      "quantity": 4,
       "manufacturer": "Tektronix",
       "model_number": "TBS1052B",
       "serial_number": "OSC-2025-003",
@@ -52,7 +112,7 @@
     },
     "p4": {
       "name": "Function Generator",
-      "quantity": 7,
+      "quantity": 6,
       "manufacturer": "Keysight",
       "model_number": "33500B",
       "serial_number": "FG-2025-004",
@@ -152,7 +212,7 @@
   "chemistry": {
     "c1": {
       "name": "Hydrochloric Acid 37 %",
-      "quantity": 6,
+      "quantity": 5,
       "supplier_name": "Fisher Scientific",
       "supplier_address": "Pittsburgh, PA",
       "supplier_phone": "+1-800-766-7000",
@@ -181,7 +241,7 @@
     },
     "c3": {
       "name": "Ethanol",
-      "quantity": 12,
+      "quantity": 10,
       "supplier_name": "Sigma-Aldrich",
       "cas_number": "64-17-5",
       "signal_word": "Warning",
@@ -287,21 +347,21 @@
     },
     "b2": {
       "name": "Microscope",
-      "quantity": 10,
+      "quantity": 8,
       "supplier_name": "Olympus",
       "catalog_number": "BX53",
       "expiration_date": "2027-02-01"
     },
     "b3": {
       "name": "Petri Dish",
-      "quantity": 30,
+      "quantity": 28,
       "supplier_name": "Fisher Scientific",
       "catalog_number": "PD-2025-003",
       "expiration_date": "2027-03-01"
     },
     "b4": {
       "name": "Test Tube",
-      "quantity": 50,
+      "quantity": 49,
       "supplier_name": "Sigma-Aldrich",
       "catalog_number": "TT-2025-004",
       "expiration_date": "2027-04-01"
@@ -349,5 +409,211 @@
       "expiration_date": "2027-10-01"
     }
   },
-  "borrow_requests": {}
+  "borrow_requests": {
+    "14cb4844-9a32-465b-ace7-6565767ebfcb": {
+      "items": [
+        {
+          "id": "a1b2c3d4",
+          "name": "Vernier Caliper",
+          "quantity": 1
+        },
+        {
+          "id": "p2",
+          "name": "Digital Multimeter",
+          "quantity": 2
+        },
+        {
+          "id": "p3",
+          "name": "Oscilloscope",
+          "quantity": 2
+        }
+      ],
+      "user_id": "ada9a76e-df90-4eb2-ac9e-61d388a9cd98",
+      "username": "stephen",
+      "status": "approved",
+      "created_at": "2025-09-19T02:14:47.551643",
+      "id": "14cb4844-9a32-465b-ace7-6565767ebfcb",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEBUlEQVR4nO1cW4rrMAyVlcJ8JjuYpaQ7mzXdHdRLmQUMNJ8DKbro4TgtBLthykxrnY+0iXVoA0I6kpUEgn2IuJMI4MwSsGixBWeWgEWLLTizBCxabMGZJWDRYgvOLAGLFltw5isyg+EA4bhavAQ9jcMlAEzJ6vi097kHuIvVEhOIAaN8nDs+8LVzWj31MwD0bCKri/Hpue4Tnflw5pTiSxw6gjiAeQ5Ax+5zCXTSeHX4ud+8H7iDo3Dm45iHm/MwnocAI/E39pqRw1Icvn7yN9GZL+1DEIeOs9flQHGQjHY5SAspjP9+6jfRmS/J7Fni8JeRZhXW4QispDWXddqKJKL5L/zb+4E7OApnVjKjFFyigiYOTdMbwfj5RuE4ca0m17hMY1wzdwCd+YK5jPKFOHRA8f07EMB3kG+20tMT3yc689H9oaMcphBERK+ufaQ0lkOV94cqgU31h+gkdXw/2+m6U9RxQ8gWVibeHyoCG2GCeYRKZ9PUoq7t0M/WaLQAZY1G96EysBEm5Pgi/WerwbQ7PVvBlmOT+JX7UB2wvThEetCYIyqoo9va3sp/96EaYCNMyEEmiZ2Uy0wozSmXuR66E9iYDxH7hige8RKW06yz6dalPJfVAxthwlW9Zf6S9TMsu/Xaos6n7kNFYGOzH2cp5k0PWQjKtb0UbBKbPA7VAxthQpY9q2CUazVIeui2heQ+VAS2NoM2p0ijrrIcGLawBCj3oSpgI0ywmMPQYcbcC5K9/Kus5rnsHmBbzJFlT+QhRZ6dDseed1p5+0y38Vld61C19ox++d/uAO4hCZxZBOU2kEkh6QXlKWpY94dyqPI4VAS21h+itGmWOkXWd1ygfuW5rB7YFjPKrD1nMP5mIx5LNabtIs1qPvtRDWyKGT4kg30m7WMx5xLCx5lVkFT5ul/meqga2NhM/sRzsD1BgP4rSedpAJJDDDLqKKvnNPT4XPeJznz8nissAiiV8PlAKrFFKPleRzWwPR+CpRrLTgPrTbM0iOazH3XApphBHukQYS2iSB525Yc7SLZgYfWIq+uhamCDtT1j1RXSU4Fc071Zr+2rgY2+9wO4GtMleeh+zAUb1/bx3Z9RrAa2xRwltkhPejrYEJHtdbylhCbyaOLnFn/73+4A7iEJnFkEScqyCSFpDS1bH2mmyMZg4drkue4Tnfnw/lCC+QqHm/H0HYAPFEM3UzzKqueyamCzzIkzGOetGN7Sm4gU9mIiS21/49/WAqstb+HM2lxGoodS8tLXgOi7QNKQbH43mtdldcBGmLAu4Zfmz/KwK2jLUcfPkiO5HqoDNsIM/o7zArBksAlnloBFiy04swQsWmzBmSVg0WILziwBixZbcGYJWLSAxpn/AWE+YfLw7B7zAAAAAElFTkSuQmCC"
+    },
+    "93784f78-d9b0-458d-a092-34be102218a1": {
+      "items": [
+        {
+          "id": "b1",
+          "name": "Prepared Slides \u00e2\u20ac\u201c Onion Root Tip",
+          "quantity": 1
+        },
+        {
+          "id": "b3",
+          "name": "Petri Dish",
+          "quantity": 2
+        }
+      ],
+      "user_id": "ada9a76e-df90-4eb2-ac9e-61d388a9cd98",
+      "username": "stephen",
+      "status": "cancelled",
+      "created_at": "2025-09-19T02:15:18.144244",
+      "id": "93784f78-d9b0-458d-a092-34be102218a1",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEFElEQVR4nO2cXYqjQBDHq0phHhX2ADmKc4M9Utib6VFygIH4uGDopT7aMbNItzLOrNv1ewiJ1p9EKOpTgwH2MdBOIYArU1DSYg1XpqCkxRquTEFJizVcmYKSFmu4MgUlLdZw5f+oRKMGgBERBnkHDz0KQwuAr2O0ev3mX7sH2qViXJmp7AJzZ1eBKuD1/kCA8SUANBPg9SYuVYlROPN17oD2iIpUjjG+DJffGHp2JP4Y+rGG0De/UawsVH37r90O7dAorkxR/3VkfAkIUEEY2goAmreaPwaA8czXSa78MmUIYeLUxoEnRp+Y5I76znxog+0zrjw+DjVc5nCkGX6+1WHAKiA0VcDuDloUCeG010muPFo5SMPF7df19sI1NdfZUkmPNbdkT23aJ33nDmiPSHDl0XEoPB+UUigMLVgug/GB4aPVua6TXHmYErRdt96eS2du4Xs+I8f6hpv5ZgLp1eSEdvj9ua6TXHmwDyk9u0qYvam7zwMh8SHxJvehfKgoJer8mWsfLopgaB/Wlw3I86FoLW7mc+pMqLBcdo9tvcyCNARJYS0RKVgcMmOPQ1lQWTX1cJHevtW6WYpo6Hr5wEOiseU2Db233wSVp0S8TLZzVWT72nIG47OvPCTiJGep7bTXuRHaKig0DmF3q6fAsyCun2vkF85qE3Y8Lup6/ahdG3b9+a6TXHn0nHq4yHJDEtoPzWeoNXXLQyJOcgNKksNzXie58ujevo9BZjEkWoyLmjCX2N7bZ0Nl9WWgrsL1kO7GpBsLdow9h6PUcoTkPpSEClHCYqhoI2p7Zx092FToven33j4TKm3XMVmkYW+yG0B0SBQ9R8/6fCgfKiyXNRZpzGlifgNxJMlgEqDm/Yf7UBoqLw4F24jFnav4VccnOCwtY5P7UBZU3q4DNObM63lb2YdYScfC2nNZJlRaLgtWFGngWTT4MK/25az7UDZUmHKsIfzS58vsnkXd0WPLT3jwMdvg80L/23/tdmiHRnHllr19L3nrud/vJA7FrX7s2jwO5UAl+hDEOz6U+c4zTXLqZpbQ3IfSUGHKRooiXpBd4upD6+xbfPKDN/jy9Jnv7TOhQuMQ6GhIB0Iwrzns2aDlEuRc10muPHzXEYmTotih9Wwzbzh857oFKm3nKtiaQ4toq64neFp4eD2UDRX6bFB49xfboU0akRajIY9DeVCxc+rGniqLHVoVbwpRvB7KhopVjojqUtyhQXd/IF6fH178/O/MhbItP+LKL1R29ziYlrZ+aKugA2xLbfZfIP/Ir82G8k0/4MrN9VC/aOur2KvNDb7vyzZAhfZl8P5iNRLYyn6ultyHMqFClOj/cZ6AUgaruDIFJS3WcGUKSlqs4coUlLRYw5UpKGmxhitTUNICClf+AYZ3WyOk+Gw1AAAAAElFTkSuQmCC"
+    },
+    "b12b32f2-de6a-400b-98d4-559980c4eada": {
+      "items": [
+        {
+          "id": "c1",
+          "name": "Hydrochloric Acid 37 %",
+          "quantity": 1
+        },
+        {
+          "id": "c3",
+          "name": "Ethanol",
+          "quantity": 2
+        }
+      ],
+      "user_id": "ada9a76e-df90-4eb2-ac9e-61d388a9cd98",
+      "username": "stephen",
+      "status": "approved",
+      "created_at": "2025-09-19T02:24:24.769886",
+      "id": "b12b32f2-de6a-400b-98d4-559980c4eada",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEBUlEQVR4nO1cbWrjMBB9Ghv604YeoEdxbrBHKnuz+Cg9QCH5GUiYZTSS7JQaKabOrlfzfriWOw9HMMy35RjrMNJKImDMHCgrsQRj5kBZiSUYMwfKSizBmDlQVmIJxsyBshJLMOb/yHQBLTA65zD2EvH0N33ql+5wjlKHv/xr14BWsQTGzKHVP8NRrudXOHSfrQPaK3B+YV0OH7JEIxfA7XGfZMzNmGABhpMo0qmRu4aB7qpLFt1i5iuY/T8gIkI57mufZMyt7dCE8e3ieDy04LFvklna/T7JmE9j8hHRDqG7uOlZiIK2eGc56AHZexhzezvUiZ86e4d2azF8+OeNL0CK8wpSvNt9kjG3Zo4+4dL060XDHvf+0coyXADENO2H3rkCtIbkYcyt7RBPD8Y3zb4kt4djsU0MXBzfW6G97ZOMuXlexoKUec3Sr45jeIQpTbO8rARUH9O5NwmiO5/HywPxYD7p9xj4EsuL/8KvfRD0KCHBmI/Uh5AszVENDzQlC8vOmyUpHJkdKgLVFg9d2xDuaGHaB9a31g2nV7jhBMb4C3pndepCUJV1asRLLEyzlKi1Yi3+bRY8mR3KgiphQiNk7WbIJXir+ZJ9eDRMS9OhIlB9doiP9wHQ1D4bxBhptCRpmtmhMlBtdepr68vR0iBzHOKhqxaJgHMPxrmXcpHb5z7JmNvXh67qskJarx6suSsXxWjJfFkhqMYaI3/jsropMpriJtOhElBVTJZQSOcYU7ceOEtvTPpl0kgLd+4ldvD3uM81oFWsCu2QhxoesUOaiGlGHy6+xuhFLKYuBFXCRPBMaXBRVUpr0qx5mTo0P1iUREyH8qDK6kOnVE9MZSA/Yj2kStGs2mg6VASqsm8PfA2ij7FLpiqVHJrpUB5Uny/jpE1phBEx308xkpoq06ESUGUxdefD6WiH0gWhNOQb+pO7Mx0qAdWnQ5g5Kk3OmtAESe3WGUyHsqDa+mXNzIOFcSI1RrH4qC01mx8qB1XG7C4ujpolDyYfd8jFHcQs/dZC44v6vL3u83HQCk7NffvmviCE2DSLY432nesjoEqY+BLmzIY9wsQH4hRI/K/FQ4WgCnsd0HnqmNZPn9ofY8Xa6kOPgCr9NohDdTrMg0BPb4gZfezvmw6VgCo994M1YE6NV6RcbYLZoTJQzUye9TVONzdNo8W7Dd5ZBCoT+wbGfCJzOAHuXZzX6I9F6xvWY9G8Q5Oz0X7+ncWgctEvMOYTz/0Q8Nh/tpBPy9ivh1MvB+p9xpHrHe6TjPm8cz+cntngXdbN+VMYVUTm9EOh8WfeuQK0huRhzO2Yzs44z4ByAoswZg6UlViCMXOgrMQSjJkDZSWWYMwcKCuxBGPmQFkJVM78A5M6WjtpAFIcAAAAAElFTkSuQmCC"
+    },
+    "e1ef9523-1b3b-4de5-8a5b-ff78bdf6c0aa": {
+      "items": [
+        {
+          "id": "a1b2c3d4",
+          "name": "Vernier Caliper",
+          "quantity": 2
+        },
+        {
+          "id": "p4",
+          "name": "Function Generator",
+          "quantity": 1
+        }
+      ],
+      "user_id": "ada9a76e-df90-4eb2-ac9e-61d388a9cd98",
+      "username": "stephen",
+      "status": "approved",
+      "created_at": "2025-09-22T01:18:12.397487",
+      "id": "e1ef9523-1b3b-4de5-8a5b-ff78bdf6c0aa",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEJ0lEQVR4nO1cUW6jQAx9Nkj9JFIP0KPQm/VMewM4Sg5QiXxWIvLKngGStmgmbGk3Hb8PAhk/kZEsz7NnHBJsQ88biYAzU+CkxRqcmQInLdbgzBQ4abEGZ6bASYs1ODMFTlqswZm/kUkRNdDr5/OJKIz3h2ho3wU8//Cv3QLexFI4MwlRoLWPoRLpmhFAIxIurYxAO6idji7G3X3Nk525G7OOn6cD0P4BCHgQ4EQQnOpRegIEGIMdAdX4z+9kZ/5+JtGTCJEuYxqCiA6VxBVst3dmgfPMPoEzv5V5JrRH1UPNGxE9jRA51ju/MxOca/gBztyf2ajE0RsVO+ifbMWqtABZ6eNbkNgiKo++6p23gzdwApy5O7O3hMtysFMNtMcHQavRRy/0oo8aoAxf9c4N4C0kgzP3Y9K7vY7oIc2rrl7VeCmir+F7HUlwUUyKxZ8a0llGb3FIRn0cY/VoNvnxX7sFvImlcGYSYuhgxR/Vz4OJInWfWQ8FtaSXYOL1oSxwacxzCDKWx5soopfhTKazpdPRZ03YtGztdepMcIFxqGtikAHC3agGVShMh2DkdeobwIUwEZ0mwPxlWtDC6GBr2ZLqx/TffSgNLnG/TMybqgt5hOhSs3O5HsoHl8Y8kxWJwkM7nAk42c7Zg25z2OiDoF92Pe50njeDb6cUxqztKj3ZkqVL2OmgNSOtCqkoArRE3YgWjnQTZDjXdzlPdubueqiJiucyhTcptCT4ppbsFIivZVngQpiIOshEtJUXhyvpLLMAineuh7LBZTH7Jw1G0+nFEIy0NESxXERRHnl96AZwIUzEqKLax7Y5wnchEZOQocXYFI41en0oG1xejRHqKlNB6Oq7zjxsEkW+lmWCC6sPDVMp0VRziEjBc5awFEOV+1AmuLS8TK4zr8uD+RIdSc2nBc19KA0uba+jmgJP6OtYFi/M2Vj0K49DmeACNbXYsY/QBzRvizWz54TRWWzf1zzZmfvrIVzeRZeqPqRpC9yHkuDy9lwR87Kr0W5qVLSBaR/WfSgHXFqP4uMo1s3RT31kon2LhCaMilUfCc0gdzlPdua3xCFY8Se0RI+fnB+C66GbwIUwca1yYqVo3iqDyqN4WdzMfSgLXAiztuvUM1aNdthD+sNrjfaPrWDVqKeGRtLlLnbBdvc3T3bm3nqoNbc4PQZvImtP1F5p2KU1DRSy/Nda7nGe7MzvyO2xbHhEZYR4Zw4W4XooG1wqsz3WqqS1GSh0lb0RvcztZvZ3RP/Rr80G55u+gzNTqD9+pdqnEe3Br7RXWk8NUSWkC5oAfhY2G1zs/6Bhaihb9jrasN067cP6WpYHLrW/LGJpEJJ4xnoRRe5DeeBC//cjG/19zZOdmQCnDFbhzBQ4abEGZ6bASYs1ODMFTlqswZkpcNJiDc5MYbum/guT8E+iBdyhBwAAAABJRU5ErkJggg=="
+    },
+    "56ca8304-5f6c-4e64-8009-3d03c8d1d13c": {
+      "items": [
+        {
+          "id": "b3",
+          "name": "Petri Dish",
+          "quantity": 2
+        },
+        {
+          "id": "b4",
+          "name": "Test Tube",
+          "quantity": 1
+        },
+        {
+          "id": "b2",
+          "name": "Microscope",
+          "quantity": 2
+        }
+      ],
+      "user_id": "ada9a76e-df90-4eb2-ac9e-61d388a9cd98",
+      "username": "stephen",
+      "status": "approved",
+      "created_at": "2025-09-25T01:16:13.757391",
+      "id": "56ca8304-5f6c-4e64-8009-3d03c8d1d13c",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEAElEQVR4nO2cW26rQAyGPSZSHskOuhSys6o7g6V0B/BYKZGP7LlAWiFPRo1yUvt7IGnxr4BkeTy2IRC0MWGjEMCVGqha7OFKDVQt9nClBqoWe7hSA1WLPVypgarFHq78i8qQOPC3A8DEB4BrCGf+nPjceclW55e9zxawSWVQORAzA9DYX/jPL3aaA9DHiR2pJ069OzGiV77PBrBFZFK55PgyzNcQwomjz6mLngPDnKxilHr+1d4PNmgirrxXGdhLaFwOHIwu7FIQgxGNirIedOUfV/ZE4X3uiD44GHFSJB8pC3rMb9aC1ZbfceXjlIf02fOytfC3hX2m/woEcD1QXMs+jySeRC97n+jKRysn2XBx4BlmzoKWI4V39hxOrHMI4kQphPDK99kAtogMxiHa/usaaDpBiMFoevsK21D1G7+JrvxTSojbdd7b5+0Xb+H5W8ypSU7IDo3hXb4UAsbXuk905aN9CLgqlA7JaWQjRsTuw94UC0dsEqtE7kMqaC0OXdhfktOIv6wHEOdKfpUKje5DOmgtDlE8iJekVS2HJaJYKUqLnPtQJWhECckj2HNkHy+kBKgrdep0IidK7kM1oLE4BJL25FSIA09yrl6+5eza86E7QCNKSOlNSYVi41VO5WUsHsa40vlaVg2aUobwJrmP1ILSCkaj9GGXY1nVrkGaIE+/2hawScW48p76EJTcZx0Foby33+73PQ5VgfbyIYr7+DImJJ4DssFnO68P3QvaUg7iLzx0xq6SG2Qdd84OEN5n6duzc33K0vbkq20AW0SCK++pDw3rqpYrRSSZ9LqqFYXHIR00plxCkCnqlPF8Snv+GiQOxYg0xUE0z6mrQSNKWMtAm5aGFIRS5wzKjHVut3ocqgPt9ctAOhzDpn3WlbL1D4X7kA7a69vTbQf/JlG65LQ717Pdh3TQXn2IUuCRYnWpCtFtQ999qB60Vh9i1piz9uhnOVHiUOx/uA/VgNb6ZV06pEp0mR+CVD3K40TuQ9WgMR+i7CVxaVvnh+Cm4SH4WlYHGlHCNnXejAmVxits54c8p74HtBaHEtu9/fdEaZ0uch+qAY2+9wP4SbN4apLHzUrhSCrWk8yIPPlqW8AmFePK6p4rlfEz7mvIqxm4/8FPK8bH72N6VN7t8Jr32QC2iEwpQZwnlajLFLV0ONa9GhOtSynb1zIdNKqkMb6koaNw7vklRHyI7wLhsx9v/v6hatCusqOY9kzhyN36Ml6dx4nSn//J1VaCtYY/cKUK3fY6NuP4ZQgfStl6VfhapoNGlLBJdjbvPCslaogzaOURV8+H6kEjyuDvOFdAzWAXV2qgarGHKzVQtdjDlRqoWuzhSg1ULfZwpQaqFmBc+Q/+e3QDYGnT6QAAAABJRU5ErkJggg=="
+    },
+    "f296f043-2f8c-49ac-8017-83d1b97edfd1": {
+      "items": [
+        {
+          "id": "a1b2c3d4",
+          "name": "Vernier Caliper",
+          "quantity": 1
+        },
+        {
+          "id": "p2",
+          "name": "Digital Multimeter",
+          "quantity": 1
+        },
+        {
+          "id": "p3",
+          "name": "Oscilloscope",
+          "quantity": 1
+        }
+      ],
+      "user_id": "ada9a76e-df90-4eb2-ac9e-61d388a9cd98",
+      "username": "stephen",
+      "status": "approved",
+      "created_at": "2025-10-08T14:17:42.251184",
+      "id": "f296f043-2f8c-49ac-8017-83d1b97edfd1",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEIklEQVR4nO1ca4qkQAxORWF+KuwB5ih6gz3SskfaG3QdZQ7QoD8blCxJPbQHpEoZmXYq349uH/nQgpB3aQiOweJBIoAyU8CkxBaUmQImJbagzBQwKbEFZaaASYktKDMFTEpsQZk/kWk8ajA9zAYAZiNHpufblu/1Y5DqL7vOI8BDrJKYtfvrbvw7/gKy7cBhdkVg2zuf3muAZgADUE0ia664TlTm6cwx2pdxsUiV16ZuENsk9qq+9jr3Aw9wymLWn86dubG/74ZgrCfTDSDGCAjGr3omKvNnM7tBoqCKjGnlQjBB/XnPzAbmi36CMs+3Qw27LbY0ljWn+1dPAA0bI/FlH28kmkSXXScq82ymlSBI1GeQKIiPWHP6USIjwezSsq965gHgEZJAmWfbIVpdaR5BS5oJyL7zaTMFU/UVz0Rl/igmEAM6+RmWy+zBVjeCbYLGX6PbtdaJyjxZh+gGFdFNFGSo3CUiTsmI1aejCejmjNEUGNdaJyrzbDvE8PoixkhUhXUoao5TLtE11aE8YGl52b02HAqRbbkczZE0NBNfk2hpjvWhmXO173pbVOYL+7JmevJboURNchTjIZKWiMZDecCydIgk9nHq41XFO7lGAiD2ZatT1aEcYGl2iEJV6CkHI9Erp1x8GpVLdSgNLC0vYzTPlibE2f5HjFHM2lSHksDSmBURfUiEzWMf3J5fl4tmAzC+Ef1tffvssuvcDdxPKToeIrZDoajI0TX4EvWS4KsvywYWmJfdJJx2Di3+gDg0fyN4NdWhHGBpNcbKqUYwQT7OJqkxumuhAqk6lAksbRZ2NmR7mTerpKhYE4yGK4tvJEMhZFvguTQ/EHu1daIyz4+HKh8AORMkt1xkFBoesQWrdigTWAgT1qXEp1ZZaJAFuBBb60P5wLKYHdsh+86BNTsv+y569TCmD8ZIemgSN+neoExgYczRGOg+ajB/wh4Oh05OJbd37bOXeNv9wAMcB2Vm7+uoeIB6qsNkdT0RjC3H1C2QNdK8fxjoKA49XmudqMzTY2rylsZn+RJJr7qvcfxM60P5wBJ1qPGtMn8reDAXD7mszR2pDuUAi2Ia3tLhw2nZVSYlaikNRUgPzZuq733bI8BDLIYyk6Bn+ImPpRwN60l87dvvARbChLXzCjOLS4MMvAeLw4xupkh1KAdY7nc/QJL5mvN94Guu1+HDI+l/fNvbojJf1w51oTC9RDzL+Bm4MViG+rIdwEKZFBv1pnd16oehv6aOkyFT2Dr9Cm+bD9wh+wxl7v12DHDLfknrDX82JsC37NWXZQLL2ytNy9h03BZEbjNQiLMXhvqyNLDUvAzcrmk/1gg+1Y9bXLXGmA8shGn0G+cJYEpgE8pMAZMSW1BmCpiU2IIyU8CkxBaUmQImJbagzBQwKQGFM/8DLTwzT5ZAbugAAAAASUVORK5CYII="
+    },
+    "e7ee58e9-9081-4749-a482-6f82e5611fcc": {
+      "items": [
+        {
+          "id": "a1b2c3d4",
+          "name": "Vernier Caliper",
+          "quantity": 1
+        },
+        {
+          "id": "p2",
+          "name": "Digital Multimeter",
+          "quantity": 1
+        },
+        {
+          "id": "p3",
+          "name": "Oscilloscope",
+          "quantity": 1
+        }
+      ],
+      "user_id": "ada9a76e-df90-4eb2-ac9e-61d388a9cd98",
+      "username": "stephen",
+      "status": "pending",
+      "created_at": "2026-01-22T15:14:59.620497",
+      "id": "e7ee58e9-9081-4749-a482-6f82e5611fcc",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAELElEQVR4nO1ca2rjQAyW5EB+OrAHyFHsG/RIZY+0N4iPkgMU7J8BBy3SjGx3d81MvKStO/oorh/6iAeE3mNk2IaONhIBnJkCJSXW4MwUKCmxBmemQEmJNTgzBUpKrMGZKVBSYg3O/I5MjDgAdHYennenKIjtYE/aT37bLaBNLIEzM5kNC/q/HuNrf0dVH75ApUK853VuAG0hFcU8xP/DCaD5BYBQ94DNJd7mDgFY/wQIUI2f+LbkzL0w+QL36NqaXjzdSYzRc38zC5Qn9g848yOZA2KMguobIp5HYL4e+Yu+bS4oW/JPODPXl9WiJIOeViM2PbD4LdYDANxDiM27XSc589nMThMusT7ivAAGcWPXeMDWFGmRsO1znRtAW0gF2iF+f5O7800cWiW5fQUsBmoOrP/7N8mZ34oJIV0P1keyd8vIYr5/qSWZr0czUJbg82Vf6yRnPlmHOJSGRFUmRWLu1YPFg2oTM0uI7TqUBSqKiSEUuh5EQW6IrzwCtvVNKouS6te3Rdna69SZoALjoe48HqBrxfAMp3APNSVr+rtc3A8cc7XPelty5hf2ZSw+Shxaw2M8wOzQNCgSr6ZBUQiU9rVOcuZHxEMcmmGmL6pXINoUFCmceTyUDyqPidJa1TIQcy9FxUGq08ORsQ01xool1ZfLL/C2D4IeJUxwZm6delGsPjJ0L+NBex0QDlK7Dm3Z/n7Y5TrJmc+uDwlCaUgiHguPKsvtxb+FUMh8nvuyNKgQJkSNqC3OCZf6aC4I9V4f2gAqzw6BGhnRphhTW0oWI247eF6WCSqECbPhsbwsWhpo1PqITDNpk7Y+XIfyQOXVhyAEO8EYWZbfBDc2SrSk9SHvl2WDSvNllRkZrQWZCeK5c6b1oRgUuQ7lgAphwuy3FjdDndqMkSmSPHFflg8qLS/jqURtub06L4FlY6pXWrt2HcoBFTj70bzLy2x+aLQs35yc61AmqBAmLHKwuUG2nB+C9/0yj4eyQaUx7zIqrQ0yHaAGmx+qmeOZzFh38y6hna7zYdDjlFL3dYzSIHtDhqEaoXt5k1khkC2LMjU0/AhTQwj1FHvva53kzOf7MoiXIXufLjmUF21zq8dDD4AKYcIixFlk+dYbg6nTqpqzYLgOJUGFfveDf55Vc/RLDcdl8VH3nOksrMdDeaBCv/uBr1dE/ml7pUE3TLeqPiHLH3e9zg2gLaRi46FmCnZ02CMGRdUyHvL9ZQ+ASmV2eADEs36ugcWN3ZBZNg1NZWv3ZZmgEmdhFXUP3LWhUjQigIzGtvIdh7BbOn69YW/rJGc+nVlPrVX5UoM4L2x14kPOXsWraXkRT14fygYVOMcIc5csbJiuLPYJ80MGrw/lgQphon/jPAFKCazCmSlQUmINzkyBkhJrcGYKlJRYgzNToKTEGpyZAiUloHDmb3mTIp6owtYAAAAAAElFTkSuQmCC"
+    },
+    "cfa4c06b-8f78-4c4f-865f-17a39e41d7f0": {
+      "items": [
+        {
+          "id": "p4",
+          "name": "Function Generator",
+          "quantity": 2
+        },
+        {
+          "id": "p5",
+          "name": "Power Supply",
+          "quantity": 1
+        }
+      ],
+      "user_id": "ada9a76e-df90-4eb2-ac9e-61d388a9cd98",
+      "username": "stephen",
+      "status": "pending",
+      "created_at": "2026-01-28T10:06:41.680575",
+      "id": "cfa4c06b-8f78-4c4f-865f-17a39e41d7f0",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAED0lEQVR4nO1cbW6kMAx1DFJ/zkg9wBwFbrBH6pn2BnCUHqDS8LMSyCvbCZOOhJLJlp2l8ftBYfATIFnPH3HqCMowYiERwJgpYNJiC8ZMAZMWWzBmCpi02IIxU8CkxRaMmQImLbZgzJ/IdB4tRIceFud6vj2eFwcwBav+sN9ZAixi1cQEYkAnf64NHwCgkzOagYbTDAAnNtHfgvFwrO9EY+7OnFZ9gYZgvHw6GM8NF20Nu4+3EoH6tmc+DizgKIy5H7O9u3bdb9ah3y1A997Ojt2HxvNHSzB91zPRmD+bOZ75eJrBOTmDxYkOBZXa45nZwHzTOxhzfx06cdgKSuP7jqcPRxra+oZcdOMvn4nG/InMUQouFh7VnOmFoHt/IddPLbg3zYcWLcue/7YFwBKSwJh5OkTxT4vTnJoDGunZTaqO+p1ozL37Q70cJhEZrsZYh0R43q58yQX+KlXWH8oEVqZD05nFiMCJ+sD0Gn6bXmeQs/HXBxsvLR3xO9GYO/cYiTuLNID0GBuiQW/M2mPUA98QlVJYjzEJrIs5XsiHrPUQFjwg5NmwOKIrr3o8+20LgCUkgTGTIFm+iC5FkXhxQzMjkD61nPm7ttaRCawsllFYG4v8RVwlxDLxHK3VLJblAevTIZKMx6++8g+n4FyiTeo5N+c61neiMXdmEqfTPhWaWk2PaJB1WK3ymy+l/rc8swRYxGIY8x/EMmKRER3yAc2rz7WJqzbToQeAlc0PXUMYk3TaX85RmeadS0Kb+VAWsEIdolV4tC7T4iyu1WLROtZ3ojF31yGSQ6jLJJaJ0wy3Eca7gu1Y34nG3FuHhpDs+LlXKfXV4EvvWlvZ5kNZwApr+2Fd11i9iXwYC/0hrfzNh7KAFebUoJojnei42wgyT60ptsWyfGB9fWqIiq5QiJHmQ8F9Iob5UBJYFdPJfo3RST8xhnuTRVbuO2qerd3G575tCbCIxTDmY/2hOYhR1GOEMPuh7SLLh7KBVfapwafT3pEgvvTJttVl2cAK1+0p6FA8SQRhj6LPs232IxtYFdM55/dwyP4yGqKVVgFvENItrpYPZQNrXOsgyYz41zD8SnHf0d+1WJYJrHKOsdFVMp8ZrWW9dx8/HmI+lAmsi9mta64Db0rU3T+yVWh64UkiDmM6XcQx79lvWwAsIQmMmQTdIphfbvWN6VDgNz7ICSynfgBY6f/9oPEy8//4aGbXDZ8O5ADQzDT2cpe3oD3tbdGYR2B214acu4SyfpQyTW+F2Y/h/3nbbGC+6R2M+cD8EEXjZzIKErLr22jsjWGxLA2sti4DcZ+7AZDGjxjZ/rIHgJUwnf2P8wQwZbAJY6aASYstGDMFTFpswZgpYNJiC8ZMAZMWWzBmCpi0gMqZfwBC+nQLbzpXHwAAAABJRU5ErkJggg=="
+    },
+    "004b0c6a-00a1-4ca0-a3e5-02e28b681755": {
+      "items": [
+        {
+          "id": "a1b2c3d4",
+          "name": "Vernier Caliper",
+          "quantity": 1
+        },
+        {
+          "id": "p2",
+          "name": "Digital Multimeter",
+          "quantity": 1
+        },
+        {
+          "id": "p3",
+          "name": "Oscilloscope",
+          "quantity": 1
+        }
+      ],
+      "user_id": "1d37a072-885f-499d-b771-4657263ea99a",
+      "username": "kimon",
+      "status": "approved",
+      "created_at": "2026-01-28T12:40:05.175431",
+      "id": "004b0c6a-00a1-4ca0-a3e5-02e28b681755",
+      "qr_code": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEKklEQVR4nO1cUYrjMAyVlEA/U+gB5ijuzZY50t6gOUoPsJB8DiRokWwnadlgN0x3mlrvI41bPRKDkJ9kuciwDS1tJAIYMwVKWqzBmClQ0mINxkyBkhZrMGYKlLRYgzFToKTFGoz5jkwMqAHPMm6PIHcjxuGIAH20Ou92nltAm1glMWv/4S5y7U/A0J8GgL4euEUAbo9/aoCmEuldDWqLP/e2ZMwXZvYxvrQfA4DjLwRoWD2HwXUaljRe1fue5+OgDZyymPXdGMVfoBWH0TvXhWDE0H/XM8mYb87sa8Bf6khHHY84x6FnPTMXlG15D2M+Pw41smzFSMOqqaEZa3CXiqE9V6wqiHc7TzLms32o9UK58iN03WlA9/vAKBJbhvK1JGff8Uwy5hv6EC+/UlcZkQEGkdiqrocYqr7jmWTMt2ICC8DpRVSQ+Atrpu9YM7T4q0cThnzZ1zzJmE/XQ/1RYg5LSnZgdOoy/XEqF8mdLw2NNe9xnmTM58ehwUcfHTLrUCOSX8YGYNYoBVUwsDiUBBXmQ110n0ujl+A5oBf1MO7EfWa7fc2TjPlsZvsxAJ77OtaHrgfmi8ScS39ggP7AiLppJgua7ZflgQphQly84gqmkUbjkOtkl2xa0Lyw1lXN4lAWqChNjbKhqlEGQ7Wx9rGJAUZvqEqa27Ptl2WDytJDECpAchckdtDPXbWIUhqbLA5lgkrT1FUQQN6lvPvAjZL2Jqaps0GFMGGRjc16SPwlBKPmHxma+VAWqDxNDV5EazamXUNTdXouYM8wH0qCimIiap9HI3tjAi0XfWIda4zqUlfN8hF3PM8toE2sYjU1SFqvH4thxUspZJo6H1QIE4JH6AoWk7O4zcGhgD3Xh3S71XwoD1RafUgg5Whpx/fFaneVxnztRvNmY619Rrbnmgkqisnz1uplOhE014ycLxcpVHb/7NtuAW1iCYyZHYcQwF1Rgsx8BGiswXXS7CGdIdoAIs366A8S7WueZMyna2oIemghj0KlCBZpvemhR0CFMGGxkTFtbsRmD1h2NIYmIsvLskHlMVkcCVEbqEVTo/aDqACSLVg9ICQNINb7kQkqiomIywIif35M6xso5ICQP+JqmjobVGT/EC88x69qirkxf9HvuK95kjH/2/9+LBBO3g9xHHuKdjzPLaBNrML/9+MYd8R6uelP07EgcR9tjf2xtyVjvm5u7/z/M2jza9itj61DVcjVFGpi58vyQIUyeZJCeG6+0F8kQ/M/hG38V3nbfNADtrcw5sNMd5W0XurS7VGyMW0K0QMfMTkLudpLvG02KN/0DsZMghf152nx8tv4NxlaPKNoeVk2qLS9DkU4DHTTScRLv1JHMj2UByqEifYf5wlQymAVxkyBkhZrMGYKlLRYgzFToKTFGoyZAiUt1mDMFChpAYUz/wI9VwIHpWUs9wAAAABJRU5ErkJggg=="
+    }
+  }
 }

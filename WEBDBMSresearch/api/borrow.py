@@ -3,8 +3,8 @@ from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 from uuid import uuid4
 from datetime import datetime
-from ..core.dependencies import storage, require_role, get_current_user
-from .qr import generate_qr_code
+from core.dependencies import storage, require_role, get_current_user
+from api.qr import generate_qr_code
 
 router = APIRouter(prefix="/api/borrow", tags=["borrow"])
 
